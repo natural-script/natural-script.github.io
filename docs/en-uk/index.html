@@ -1,0 +1,849 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Jste Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;javascript&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="javascript">javascript</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#get-started" class="toc-h1 toc-link" data-title="Get Started">Get Started</a>
+          </li>
+          <li>
+            <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#text" class="toc-h2 toc-link" data-title="Components">Text</a>
+                  </li>
+                  <li>
+                    <a href="#firebase-centre" class="toc-h2 toc-link" data-title="Components">Firebase Centre</a>
+                  </li>
+                  <li>
+                    <a href="#login-form" class="toc-h2 toc-link" data-title="Components">Login Form</a>
+                  </li>
+                  <li>
+                    <a href="#button" class="toc-h2 toc-link" data-title="Components">Button</a>
+                  </li>
+                  <li>
+                    <a href="#icon" class="toc-h2 toc-link" data-title="Components">Icon</a>
+                  </li>
+                  <li>
+                    <a href="#tooltip" class="toc-h2 toc-link" data-title="Components">Tooltip</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#commands" class="toc-h1 toc-link" data-title="Commands">Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#events" class="toc-h2 toc-link" data-title="Commands">Events</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+          </li>
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/project-jste/jste'>© 2017 Jste Team</a></li>
+            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to Jste ! The first translated web framework in the world !</p>
+
+<p>This documentation is a reference to everything related to Jste starting from how to get started to the most advanced functions and commands including examples for every section.</p>
+
+<p>If you faced any problem while using this documentation, feel free to send us on <a href="mailto:project-jste@outlook.com">project-jste@outlook.com</a></p>
+<h1 id='get-started'>Get Started</h1><pre class="highlight html tab-html"><code><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"import"</span> <span class="na">href=</span><span class="s">"https://localhost:2015/res/Res.html"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;en-uk&gt;</span>
+
+<span class="nt">&lt;/en-uk&gt;</span>
+</code></pre>
+<p>1. To get started, you have to be sure first that you have the following requirements:</p>
+
+<ul>
+<li><p>Jste manager installed.</p></li>
+<li><p>Any text editor <code>e.g. Notepad</code>.</p></li>
+</ul>
+
+<p>2. Open your favourite text editor and initialize your project by entering the code mentioned.</p>
+
+<p>3. Save your code at any location on your PC after naming it <code>YOUR_DESIRED_NAME.html</code> and setting its encoding to <code>UTF-8</code>.</p>
+<h1 id='components'>Components</h1><h2 id='text'>Text</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">text0</span> <span class="p">({</span>
+<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_text'</span><span class="p">,</span>
+<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample text'</span><span class="p">,</span>
+<span class="na">colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="na">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
+<span class="na">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="na">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
+<span class="na">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
+<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="na">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="na">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
+<span class="p">});</span>
+</code></pre>
+<p>Any texts including headings, titles and paragraphs.</p>
+
+<p>Properties:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>text</td>
+<td>The text you have been inserted.</td>
+</tr>
+<tr>
+<td>font_colour</td>
+<td>The colour of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action o nthis element.</td>
+</tr>
+</tbody></table>
+<h2 id='firebase-centre'>Firebase Centre</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">firebase_centre</span> <span class="p">({</span>
+<span class="na">username</span><span class="p">:</span> <span class="s1">'jste-9584c'</span><span class="p">,</span>
+<span class="na">password</span><span class="p">:</span> <span class="s1">'AIzaSyDMGk_SFlEto93zfGHUbVLwxYiSq00aknk'</span>
+<span class="p">});</span>
+</code></pre>
+<p>Firebase services initialization.</p>
+
+<p>Properties:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>Your unique username on firebase.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>Your API key for your firebase.</td>
+</tr>
+</tbody></table>
+<h2 id='login-form'>Login Form</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">login_form</span><span class="p">();</span>
+</code></pre>
+<p>A login form and users system for your app or project.</p>
+
+<aside class="note">Till now this component is added as it is without any properties</aside>
+<h2 id='button'>Button</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">button</span> <span class="p">({</span>
+<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
+<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
+<span class="na">width</span><span class="p">:</span> <span class="s1">'20px'</span><span class="p">,</span>
+<span class="na">length</span><span class="p">:</span> <span class="s1">'30px'</span><span class="p">,</span>
+<span class="na">raised</span><span class="p">:</span> <span class="s1">'yes'</span><span class="p">,</span>
+<span class="na">switched</span><span class="p">:</span> <span class="s1">'yes'</span><span class="p">,</span>
+<span class="na">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="na">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
+<span class="na">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="na">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
+<span class="na">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
+<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="na">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="na">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
+<span class="p">});</span>
+</code></pre>
+<p>Buttons with various styles and customizations for your app or site.</p>
+
+<p>Properties:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>text</td>
+<td>The text you have been inserted.</td>
+</tr>
+<tr>
+<td>switched</td>
+<td>Determine if this button is switched on or not. <code>Takes yes for true</code>.</td>
+</tr>
+<tr>
+<td>raised</td>
+<td>Determine if this button is raised with a slightly shadow or not. <code>Takes yes for true</code>.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Determine if this button is disabled or not. <code>Takes yes for true</code>.</td>
+</tr>
+<tr>
+<td>colour</td>
+<td>The colour of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action o nthis element.</td>
+</tr>
+</tbody></table>
+<h2 id='icon'>Icon</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">icon</span> <span class="p">({</span>
+<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_icon'</span><span class="p">,</span>
+<span class="na">icon</span><span class="p">:</span> <span class="s1">'heart'</span><span class="p">,</span>
+<span class="na">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="na">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
+<span class="na">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="na">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
+<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="na">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="na">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
+<span class="p">});</span>
+</code></pre>
+<p>Icons which acts exactly as a text.</p>
+
+<p>Properties:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container which will contain this element.</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>The name of this icon you wish to add.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_colour</td>
+<td>The colour of the icon.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the icon.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h2 id='tooltip'>Tooltip</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">button</span> <span class="p">({</span>
+<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
+<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
+<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
+<span class="p">});</span>
+
+<span class="nx">add</span><span class="p">.</span><span class="nx">tooltip</span> <span class="p">({</span>
+<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_tooltip'</span><span class="p">,</span>
+<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample tooltip'</span><span class="p">,</span>
+<span class="na">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="na">emitter</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
+<span class="na">direction</span><span class="p">:</span> <span class="s1">'from_the_bottom'</span><span class="p">,</span>
+<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
+<span class="p">});</span>
+</code></pre>
+<p>Tooltip to make it easier for you to add a description for any of your elements.</p>
+
+<p>Properties:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container which will contain this element.</td>
+</tr>
+<tr>
+<td>text</td>
+<td>The description of the element from which the tooltip will be emitted.</td>
+</tr>
+<tr>
+<td>emitter</td>
+<td>The element from which the tooltip will be emitted.</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>The direction from which the tooltip will be emitted <code>It may be from_the_right, from_the_left, from_the_top or from_the_bottom which is the default value</code>.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>font_colour</td>
+<td>The colour of the icon.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the icon.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h1 id='commands'>Commands</h1>
+<p>From the most exclusive features of Jste is the ability of programming in your natural local language which you speaks in your daily life.</p>
+
+<p>This section is a reference to all the commands and functions which Jste supports till now.</p>
+
+<aside class="note">Please don't use the experimental functions in the production, as we haven't finished buildng them yet, so using them will be very risky for your application</aside>
+<h2 id='events'>Events</h2>
+<p>Most of the events in Jste English edition are started with the word <code> When </code> and end with <code> , </code> to facilitate writing and reading them and in the fowllowing you will find a list of all of these events and their descriptions:</p>
+
+<table><thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>When it has been clicked,</td>
+<td>It is fired when someone clicks the element.</td>
+</tr>
+<tr>
+<td>When the mouse pointer has been moved over it,</td>
+<td>It is fired when someone moves the mouse pointer over the element.</td>
+</tr>
+<tr>
+<td>When the mouse pointer has been moved away from it,</td>
+<td>It is fired if someone was moving the mouse pointer over the element and then moved it away from it.</td>
+</tr>
+<tr>
+<td>When the mouse pointer is being moved out of it,</td>
+<td>It is fired when the mouse pointer is in the state of moving outside the element zone.</td>
+</tr>
+<tr>
+<td>When the mouse pointer is being moved over it,</td>
+<td>It is fired when the mouse pointer is in the state of moving over the element zone.</td>
+</tr>
+<tr>
+<td>When it is no longer clicked,</td>
+<td>It is fired if someone was clicking the element and then relased the mouse button up.</td>
+</tr>
+<tr>
+<td>When it has been double clicked,</td>
+<td>It is fired when someone double clicked the element.</td>
+</tr>
+<tr>
+<td>When it has been right clicked,</td>
+<td>It is fired when someone right clicked the element.</td>
+</tr>
+<tr>
+<td>When a key has been pressed while focusing it,</td>
+<td>It is fired when someone pressed a keyboard key while focusing the element <code>Mostly used for textboxes</code>.</td>
+</tr>
+<tr>
+<td>When a key is being pressed while focusing it,</td>
+<td>It is fired when someone is pressing a keyboard key while focusing the element <code>Mostly used for textboxes</code>.</td>
+</tr>
+<tr>
+<td>When its contents have been modified,</td>
+<td>It is fired when the value of the element has been changed <code>e.g. The text in the textbox</code>.</td>
+</tr>
+<tr>
+<td>When it has been focused,</td>
+<td>It is fired when the element is focused <code>Mostly used for textboxes</code>.</td>
+</tr>
+<tr>
+<td>When it is being focused,</td>
+<td>It is fired when the element is being focused <code>Mostly used for textboxes</code>.</td>
+</tr>
+<tr>
+<td>When it is no longer focused,</td>
+<td>It is fired when the element is no longer focused <code>Mostly used for textboxes</code>.</td>
+</tr>
+<tr>
+<td>When the data of this form has been sent,</td>
+<td>It is fired when the data of the element has been sent <code>Can be used only for forms</code>.</td>
+</tr>
+<tr>
+<td>When it has been scrolled,</td>
+<td>It is fired if someone scrolled this element in any direction.</td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1>
+<p>This section is a reference to various of the universal error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I&#39;m a teapot.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="javascript">javascript</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
