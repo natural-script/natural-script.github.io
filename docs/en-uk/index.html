@@ -291,20 +291,19 @@
 <p>2. Open your favourite text editor and initialize your project by entering the code mentioned.</p>
 
 <p>3. Save your code at any location on your PC after naming it <code>YOUR_DESIRED_NAME.html</code> and setting its encoding to <code>UTF-8</code>.</p>
-<h1 id='components'>Components</h1><h2 id='text'>Text</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">text0</span> <span class="p">({</span>
-<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_text'</span><span class="p">,</span>
-<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample text'</span><span class="p">,</span>
-<span class="na">colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
-<span class="na">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
-<span class="na">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="na">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
-<span class="na">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
-<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
-<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="na">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="na">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
-<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
-<span class="p">});</span>
+<h1 id='components'>Components</h1><h2 id='text'>Text</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">text0</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_text'</span><span class="p">,</span>
+<span class="nx">text</span><span class="p">:</span> <span class="s1">'This is a sample text'</span><span class="p">,</span>
+<span class="nx">colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="nx">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
+<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="nx">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
+<span class="nx">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Any texts including headings, titles and paragraphs.</p>
 
@@ -389,10 +388,9 @@
 <td>The commands which will be executed when making a specific action o nthis element.</td>
 </tr>
 </tbody></table>
-<h2 id='firebase-centre'>Firebase Centre</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">firebase_centre</span> <span class="p">({</span>
-<span class="na">username</span><span class="p">:</span> <span class="s1">'jste-9584c'</span><span class="p">,</span>
-<span class="na">password</span><span class="p">:</span> <span class="s1">'AIzaSyDMGk_SFlEto93zfGHUbVLwxYiSq00aknk'</span>
-<span class="p">});</span>
+<h2 id='firebase-centre'>Firebase Centre</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">firebase_centre</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">username</span><span class="p">:</span> <span class="s1">'jste-9584c'</span><span class="p">,</span>
+<span class="nx">password</span><span class="p">:</span> <span class="s1">'AIzaSyDMGk_SFlEto93zfGHUbVLwxYiSq00aknk'</span><span class="p">.</span>
 </code></pre>
 <p>Firebase services initialization.</p>
 
@@ -418,24 +416,22 @@
 <p>A login form and users system for your app or project.</p>
 
 <aside class="note">Till now this component is added as it is without any properties</aside>
-<h2 id='button'>Button</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">button</span> <span class="p">({</span>
-<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
-<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
-<span class="na">width</span><span class="p">:</span> <span class="s1">'20px'</span><span class="p">,</span>
-<span class="na">length</span><span class="p">:</span> <span class="s1">'30px'</span><span class="p">,</span>
-<span class="na">raised</span><span class="p">:</span> <span class="s1">'yes'</span><span class="p">,</span>
-<span class="na">switched</span><span class="p">:</span> <span class="s1">'yes'</span><span class="p">,</span>
-<span class="na">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
-<span class="na">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
-<span class="na">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="na">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
-<span class="na">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
-<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
-<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="na">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="na">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
-<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
-<span class="p">});</span>
+<h2 id='button'>Button</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">button</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
+<span class="nx">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'20px'</span><span class="p">,</span>
+<span class="nx">length</span><span class="p">:</span> <span class="s1">'30px'</span><span class="p">,</span>
+<span class="nx">attributes</span><span class="p">:</span> <span class="s1">'raised &amp;&amp;&amp; switched'</span><span class="p">,</span>
+<span class="nx">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="nx">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
+<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="nx">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
+<span class="nx">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Buttons with various styles and customizations for your app or site.</p>
 
@@ -466,18 +462,6 @@
 <tr>
 <td>text</td>
 <td>The text you have been inserted.</td>
-</tr>
-<tr>
-<td>switched</td>
-<td>Determine if this button is switched on or not. <code>Takes yes for true</code>.</td>
-</tr>
-<tr>
-<td>raised</td>
-<td>Determine if this button is raised with a slightly shadow or not. <code>Takes yes for true</code>.</td>
-</tr>
-<tr>
-<td>disabled</td>
-<td>Determine if this button is disabled or not. <code>Takes yes for true</code>.</td>
 </tr>
 <tr>
 <td>colour</td>
@@ -528,23 +512,48 @@
 <td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
 </tr>
 <tr>
+<td>attributes</td>
+<td>The attributes of this element. <code>Multiple attributes are splitted by &#39;&amp;&amp;&amp;&#39;</code>.</td>
+</tr>
+<tr>
 <td>commands</td>
 <td>The commands which will be executed when making a specific action o nthis element.</td>
 </tr>
 </tbody></table>
-<h2 id='icon'>Icon</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">icon</span> <span class="p">({</span>
-<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_icon'</span><span class="p">,</span>
-<span class="na">icon</span><span class="p">:</span> <span class="s1">'heart'</span><span class="p">,</span>
-<span class="na">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
-<span class="na">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
-<span class="na">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="na">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
-<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
-<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="na">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="na">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
-<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
-<span class="p">});</span>
+
+<p>Attributes:</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>switched</td>
+<td>Determine if this button is switched on or not.</td>
+</tr>
+<tr>
+<td>raised</td>
+<td>Determine if this button is raised with a slightly shadow or not.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Determine if this button is disabled or not.</td>
+</tr>
+</tbody></table>
+<h2 id='icon'>Icon</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">icon</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_icon'</span><span class="p">,</span>
+<span class="nx">icon</span><span class="p">:</span> <span class="s1">'heart'</span><span class="p">,</span>
+<span class="nx">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="nx">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
+<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="nx">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
+<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Icons which acts exactly as a text.</p>
 
@@ -621,22 +630,20 @@
 <td>The commands which will be executed when making a specific action on this element.</td>
 </tr>
 </tbody></table>
-<h2 id='tooltip'>Tooltip</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">button</span> <span class="p">({</span>
-<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
-<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
-<span class="na">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
-<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
-<span class="p">});</span>
+<h2 id='tooltip'>Tooltip</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">button</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
+<span class="nx">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
+<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 
-<span class="nx">add</span><span class="p">.</span><span class="nx">tooltip</span> <span class="p">({</span>
-<span class="na">name</span><span class="p">:</span> <span class="s1">'A_sample_tooltip'</span><span class="p">,</span>
-<span class="na">text</span><span class="p">:</span> <span class="s1">'This is a sample tooltip'</span><span class="p">,</span>
-<span class="na">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
-<span class="na">emitter</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
-<span class="na">direction</span><span class="p">:</span> <span class="s1">'from_the_bottom'</span><span class="p">,</span>
-<span class="na">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="na">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span>
-<span class="p">});</span>
+<span class="nx">add</span> <span class="nx">tooltip</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_tooltip'</span><span class="p">,</span>
+<span class="nx">text</span><span class="p">:</span> <span class="s1">'This is a sample tooltip'</span><span class="p">,</span>
+<span class="nx">font_colour</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
+<span class="nx">emitter</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
+<span class="nx">direction</span><span class="p">:</span> <span class="s1">'from_the_bottom'</span><span class="p">,</span>
+<span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
+<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Tooltip to make it easier for you to add a description for any of your elements.</p>
 
@@ -710,7 +717,7 @@
 
 <p>This section is a reference to all the commands and functions which Jste supports till now.</p>
 
-<aside class="note">Please don't use the experimental functions in the production, as we haven't finished buildng them yet, so using them will be very risky for your application</aside>
+<aside class="warning">Please don't use the experimental functions in the production, as we haven't finished buildng them yet, so using them will be very risky for your application</aside>
 <h2 id='events'>Events</h2>
 <p>Most of the events in Jste English edition are started with the word <code> When </code> and end with <code> , </code> to facilitate writing and reading them and in the fowllowing you will find a list of all of these events and their descriptions:</p>
 
