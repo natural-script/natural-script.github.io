@@ -228,7 +228,7 @@
             <a href="#components" class="toc-h1 toc-link" data-title="Components">Components</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#text" class="toc-h2 toc-link" data-title="Components">Text</a>
+                    <a href="#setup" class="toc-h2 toc-link" data-title="Components">Setup</a>
                   </li>
                   <li>
                     <a href="#firebase-centre" class="toc-h2 toc-link" data-title="Components">Firebase Centre</a>
@@ -237,10 +237,31 @@
                     <a href="#login-form" class="toc-h2 toc-link" data-title="Components">Login Form</a>
                   </li>
                   <li>
-                    <a href="#button" class="toc-h2 toc-link" data-title="Components">Button</a>
+                    <a href="#page" class="toc-h2 toc-link" data-title="Components">Page</a>
                   </li>
                   <li>
-                    <a href="#icon" class="toc-h2 toc-link" data-title="Components">Icon</a>
+                    <a href="#text" class="toc-h2 toc-link" data-title="Components">Text</a>
+                  </li>
+                  <li>
+                    <a href="#image" class="toc-h2 toc-link" data-title="Components">Image</a>
+                  </li>
+                  <li>
+                    <a href="#video" class="toc-h2 toc-link" data-title="Components">Video</a>
+                  </li>
+                  <li>
+                    <a href="#audio-player" class="toc-h2 toc-link" data-title="Components">Audio Player</a>
+                  </li>
+                  <li>
+                    <a href="#audio" class="toc-h2 toc-link" data-title="Components">Audio</a>
+                  </li>
+                  <li>
+                    <a href="#slideshow" class="toc-h2 toc-link" data-title="Components">Slideshow</a>
+                  </li>
+                  <li>
+                    <a href="#container" class="toc-h2 toc-link" data-title="Components">Container</a>
+                  </li>
+                  <li>
+                    <a href="#button" class="toc-h2 toc-link" data-title="Components">Button</a>
                   </li>
                   <li>
                     <a href="#tooltip" class="toc-h2 toc-link" data-title="Components">Tooltip</a>
@@ -248,10 +269,42 @@
               </ul>
           </li>
           <li>
+            <a href="#text-operators" class="toc-h1 toc-link" data-title="Text Operators">Text Operators</a>
+          </li>
+          <li>
             <a href="#commands" class="toc-h1 toc-link" data-title="Commands">Commands</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#events" class="toc-h2 toc-link" data-title="Commands">Events</a>
+                  </li>
+                  <li>
+                    <a href="#timed-commands" class="toc-h2 toc-link" data-title="Commands">Timed Commands</a>
+                  </li>
+                  <li>
+                    <a href="#removing-elements" class="toc-h2 toc-link" data-title="Commands">Removing Elements</a>
+                  </li>
+                  <li>
+                    <a href="#hyperlinking" class="toc-h2 toc-link" data-title="Commands">Hyperlinking</a>
+                  </li>
+                  <li>
+                    <a href="#media-controls" class="toc-h2 toc-link" data-title="Commands">Media Controls</a>
+                  </li>
+                  <li>
+                    <a href="#elements-values" class="toc-h2 toc-link" data-title="Commands">Elements values</a>
+                  </li>
+                  <li>
+                    <a href="#databases-managament" class="toc-h2 toc-link" data-title="Commands">Databases Managament</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#measuring-units" class="toc-h1 toc-link" data-title="Measuring Units">Measuring Units</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#lengths" class="toc-h2 toc-link" data-title="Measuring Units">Lengths</a>
+                  </li>
+                  <li>
+                    <a href="#time-periods" class="toc-h2 toc-link" data-title="Measuring Units">Time Periods</a>
                   </li>
               </ul>
           </li>
@@ -268,13 +321,13 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to Jste ! The first translated web framework in the world !</p>
+<p>Welcome to Jste ! The first translated plain text based JS framework in the world !</p>
 
-<p>This documentation is a reference to everything related to Jste starting from how to get started to the most advanced functions and commands including examples for every section.</p>
+<p>This documentation is a reference to everything related to Jste starting from how to get started to the most advanced functions and commands including sample codes for every section.</p>
 
 <p>If you faced any problem while using this documentation, feel free to send us on <a href="mailto:project-jste@outlook.com">project-jste@outlook.com</a></p>
 <h1 id='get-started'>Get Started</h1><pre class="highlight html tab-html"><code><span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"import"</span> <span class="na">href=</span><span class="s">"https://localhost:2015/res/Res.html"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"import"</span> <span class="na">href=</span><span class="s">"https://raw.githubusercontent.com/project-jste/loader/master/dist/loader.min.js"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;en-uk&gt;</span>
 
     // All of your code will be only here
@@ -284,31 +337,111 @@
 <p>1. To get started, you have to be sure first that you have the following requirements:</p>
 
 <ul>
-<li><p>Jste manager installed.</p></li>
-<li><p>Any text editor <code>e.g. Notepad</code>.</p></li>
+<li><p>Jste Manager installed.</p></li>
+<li><p>Any text editor supports UTF-8 <code>e.g. Notepad</code>.</p></li>
 </ul>
 
 <p>2. Open your favourite text editor and initialize your project by entering the code mentioned.</p>
 
 <p>3. Save your code at any location on your PC after naming it <code>YOUR_DESIRED_NAME.html</code> and setting its encoding to <code>UTF-8</code>.</p>
-<h1 id='components'>Components</h1><h2 id='text'>Text</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">text</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<h1 id='components'>Components</h1><h2 id='setup'>Setup</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">setup</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">mode</span><span class="p">:</span> <span class="s1">'site'</span><span class="p">,</span>
+<span class="nx">title</span><span class="p">:</span> <span class="s1">'Jste Demo'</span><span class="p">,</span>
+<span class="nx">logo</span><span class="p">:</span> <span class="s1">'favico.png'</span><span class="p">,</span>
+<span class="nx">attributes</span><span class="p">:</span> <span class="s1">'remote scrolling'</span><span class="p">.</span>
+</code></pre>
+<p>Setting up the site or the app.</p>
+<h3 id='properties'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mode</td>
+<td>The mode or the type of your project <code>Takes site or app</code>.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The name of your site or app <code>Usually shown in the site title in the browser tabs bar if the project is a site or in the app toolbar if it is an app</code>.</td>
+</tr>
+<tr>
+<td>logo</td>
+<td>The logo of your site or app <code>Usually shown in the site title in the browser tabs bar if the project is a site or in the app toolbar if it is an app</code>.</td>
+</tr>
+</tbody></table>
+<h3 id='attributes'>Attributes:</h3>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>remote scrolling</td>
+<td>Make the user be able to scroll remotly using the camera through the hand geasture <code>Requires the approval camera acsess</code>.</td>
+</tr>
+</tbody></table>
+<h2 id='firebase-centre'>Firebase Centre</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">firebase_centre</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">username</span><span class="p">:</span> <span class="s1">'jste-9584c'</span><span class="p">,</span>
+<span class="nx">password</span><span class="p">:</span> <span class="s1">'AIzaSyDMGk_SFlEto93zfGHUbVLwxYiSq00aknk'</span><span class="p">.</span>
+</code></pre>
+<p>Google Firebase services initialization.</p>
+<h3 id='properties-2'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>Your unique username on firebase.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>Your API key for your firebase.</td>
+</tr>
+</tbody></table>
+<h2 id='login-form'>Login Form</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">login_form</span><span class="p">();</span>
+</code></pre>
+<p>A login form and users system for your app or project powered by Google Firebase.</p>
+
+<aside class="note">Till now this component is added as it is without any properties</aside>
+<h2 id='page'>Page</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">page</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_page'</span><span class="p">.</span>
+</code></pre>
+<p>Initailizing a page as a container.</p>
+<h3 id='properties-3'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this page.</td>
+</tr>
+</tbody></table>
+
+<aside class="note">You can acsess the pages by adding the param <code>?page=THE_PAGE_NAME</code> to the URL</aside>
+<h2 id='text'>Text</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">text</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
 <span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_text'</span><span class="p">,</span>
 <span class="nx">text</span><span class="p">:</span> <span class="s1">'This is a sample text'</span><span class="p">,</span>
 <span class="nx">color</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
 <span class="nx">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
-<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="nx">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
+<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">,</span>
 <span class="nx">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
 <span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
 <span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">,</span>
+<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100 pixels'</span><span class="p">,</span>
 <span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Any texts including headings, titles and paragraphs.</p>
-
-<p>Properties:</p>
-
+<h3 id='properties-4'>Properties:</h3>
 <table><thead>
 <tr>
 <th>Property</th>
@@ -321,7 +454,7 @@
 </tr>
 <tr>
 <td>container</td>
-<td>The name of the container which will contain this element.</td>
+<td>The name of the container or the page which will contain this element.</td>
 </tr>
 <tr>
 <td>width</td>
@@ -385,17 +518,23 @@
 </tr>
 <tr>
 <td>commands</td>
-<td>The commands which will be executed when making a specific action o nthis element.</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
 </tr>
 </tbody></table>
-<h2 id='firebase-centre'>Firebase Centre</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">firebase_centre</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
-<span class="nl">username</span><span class="p">:</span> <span class="s1">'jste-9584c'</span><span class="p">,</span>
-<span class="nx">password</span><span class="p">:</span> <span class="s1">'AIzaSyDMGk_SFlEto93zfGHUbVLwxYiSq00aknk'</span><span class="p">.</span>
+<h2 id='image'>Image</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">an</span> <span class="nx">image</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'Maher_Zain_One_Cover'</span><span class="p">,</span>
+<span class="nx">title</span><span class="p">:</span> <span class="s1">'Maher Zain One Cover'</span><span class="p">,</span>
+<span class="nx">FX</span><span class="p">:</span> <span class="s1">'rain'</span><span class="p">,</span>
+<span class="nx">source</span><span class="p">:</span> <span class="s1">'https://i.ytimg.com/vi/gnZjSui_Mc4/maxresdefault.jpg'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'980 pixels'</span><span class="p">,</span>
+<span class="nx">length</span><span class="p">:</span> <span class="s1">'500 pixels'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bounce'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">,</span>
+<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100 pixels'</span><span class="p">,</span>
+<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
-<p>Firebase services initialization.</p>
-
-<p>Properties:</p>
-
+<p>Any images including the transparent logos and icons.</p>
+<h3 id='properties-5'>Properties:</h3>
 <table><thead>
 <tr>
 <th>Property</th>
@@ -403,40 +542,593 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>username</td>
-<td>Your unique username on firebase.</td>
+<td>name</td>
+<td>The name you have given to this element.</td>
 </tr>
 <tr>
-<td>password</td>
-<td>Your API key for your firebase.</td>
+<td>title</td>
+<td>The description of the image which will appear below it.</td>
+</tr>
+<tr>
+<td>type</td>
+<td>The type of that image <code>Takes logo if the image is a logo or an icon</code>.</td>
+</tr>
+<tr>
+<td>FX</td>
+<td>Applying the FX effect you have specified <code>Currently takes rain only</code>.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container or the page which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_color</td>
+<td>The color of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
 </tr>
 </tbody></table>
-<h2 id='login-form'>Login Form</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span><span class="p">.</span><span class="nx">login_form</span><span class="p">();</span>
+<h2 id='video'>Video</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">video</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'big_buck_bunny_video'</span><span class="p">,</span>
+<span class="nx">title</span><span class="p">:</span> <span class="s1">'Big Buck Bunny'</span><span class="p">,</span>
+<span class="nx">source</span><span class="p">:</span> <span class="s1">'https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'980'</span><span class="p">,</span>
+<span class="nx">length</span><span class="p">:</span> <span class="s1">'500'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bounce'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'100 pixels'</span><span class="p">,</span>
+<span class="nx">distance_from_the_left</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">.</span>
 </code></pre>
-<p>A login form and users system for your app or project.</p>
+<p>Any videos.</p>
+<h3 id='properties-6'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The description of the video which will appear below it.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container or the page which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_color</td>
+<td>The color of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h2 id='audio-player'>Audio Player</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">an</span> <span class="nx">audio_player</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'Maher_Zain_One_Playlist'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'300'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'760 pixels'</span><span class="p">,</span>
+<span class="nx">distance_from_the_left</span><span class="p">:</span> <span class="s1">'760 pixels'</span><span class="p">.</span>
+</code></pre>
+<p>An audio player which supports playlist and lyrics.</p>
+<h3 id='properties-7'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>container</td>
+<td>The name of the container or the page which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_color</td>
+<td>The color of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-2'>Attributes:</h3>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>autoplay</td>
+<td>Make that audio player plays the track automatically once it has been loaded.</td>
+</tr>
+</tbody></table>
+<h2 id='audio'>Audio</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">an</span> <span class="nx">audio_player</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'Maher_Zain_One_Playlist'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'300'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'760 pixels'</span><span class="p">,</span>
+<span class="nx">distance_from_the_left</span><span class="p">:</span> <span class="s1">'760 pixels'</span><span class="p">.</span>
 
-<aside class="note">Till now this component is added as it is without any properties</aside>
+<span class="nx">add</span> <span class="nx">an</span> <span class="nx">audio</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">audio_player</span><span class="p">:</span> <span class="s1">'Maher_Zain_One_Playlist'</span><span class="p">,</span>
+<span class="nx">source</span><span class="p">:</span> <span class="s1">'https://server3.samaanetwork.net/full.albums/One(Vocals-Only)(International-Version)/09.Rabbee.Yebarik(Vocals-Only.English).mp3'</span><span class="p">,</span>
+<span class="nx">title</span><span class="p">:</span> <span class="s1">'Rabbee Yebarik'</span><span class="p">,</span>
+<span class="nx">cover</span><span class="p">:</span> <span class="s1">'https://anghamicoverart.akamaized.net/?id=3510779&amp;size=320'</span><span class="p">,</span>
+<span class="nx">author</span><span class="p">:</span> <span class="s1">'Maher Zain'</span><span class="p">.</span>
+</code></pre>
+<p>An audio item for the audio player component.</p>
+<h3 id='properties-8'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>The title of the inserted audio file.</td>
+</tr>
+<tr>
+<td>author</td>
+<td>The author of the inserted audio file.</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>The cover art of the inserted audio file.</td>
+</tr>
+<tr>
+<td>source</td>
+<td>The source of the inserted audio file.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container or the page which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_color</td>
+<td>The color of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h2 id='slideshow'>Slideshow</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">page</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'test'</span><span class="p">.</span>
+
+<span class="nx">add</span> <span class="nx">a</span> <span class="nx">slideshow</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_slideshow'</span><span class="p">,</span>
+<span class="nx">container</span><span class="p">:</span> <span class="s1">'test'</span><span class="p">.</span>
+</code></pre>
+<p>A responsive carousel which supports images and videos including Youtube and Vimeo streamed videos.</p>
+<h3 id='properties-9'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container or the page which will contain this element.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_color</td>
+<td>The color of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-3'>Attributes:</h3>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>autoplay</td>
+<td>Make that carousel play automatically once it has been loaded.</td>
+</tr>
+</tbody></table>
+<h2 id='container'>Container</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">page</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'welcome'</span><span class="p">.</span>
+
+<span class="nx">add</span> <span class="nx">a</span> <span class="nx">container</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
+<span class="nl">name</span><span class="p">:</span> <span class="s1">'shape1'</span><span class="p">,</span>
+<span class="nx">shape</span><span class="p">:</span> <span class="s1">'triangle'</span><span class="p">,</span>
+<span class="nx">container</span><span class="p">:</span> <span class="s1">'welcome'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">,</span>
+<span class="nx">length</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">,</span>
+<span class="nx">animation</span><span class="p">:</span> <span class="s1">'fadeInLeft'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'45%'</span><span class="p">,</span>
+<span class="nx">distance_from_the_left</span><span class="p">:</span> <span class="s1">'10%'</span><span class="p">,</span>
+<span class="nx">background</span><span class="p">:</span> <span class="s1">'red'</span><span class="p">.</span>
+</code></pre>
+<p>A responsive carousel which supports images and videos including Youtube and Vimeo streamed videos.</p>
+<h3 id='properties-10'>Properties:</h3>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>The name you have given to this element.</td>
+</tr>
+<tr>
+<td>container</td>
+<td>The name of the container or the page which will contain this element.</td>
+</tr>
+<tr>
+<td>shape</td>
+<td>The shape mask of that element <code>Takes triangle, trapezoid, parallelogram, rhombus, pentagon, hexagon, heptagon, octagon, decagon, circle or ellipse</code>.</td>
+</tr>
+<tr>
+<td>width</td>
+<td>The generic width of this element.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>The generic length of this element.</td>
+</tr>
+<tr>
+<td>font_color</td>
+<td>The color of the text.</td>
+</tr>
+<tr>
+<td>background</td>
+<td>The background of this element.</td>
+</tr>
+<tr>
+<td>font_size</td>
+<td>The size of the text in this element.</td>
+</tr>
+<tr>
+<td>font_style</td>
+<td>The font style of the text in this element.</td>
+</tr>
+<tr>
+<td>thickness</td>
+<td>The thickness of the font of the text in this element.</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>The animation of this element on loading it.</td>
+</tr>
+<tr>
+<td>transparency</td>
+<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
+</tr>
+<tr>
+<td>distance_from_the_top</td>
+<td>The distance between the top edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_bottom</td>
+<td>The distance between the bottom edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_left</td>
+<td>The distance between the left edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>distance_from_the_right</td>
+<td>The distance between the right edge of the container contains this element and this element.</td>
+</tr>
+<tr>
+<td>position</td>
+<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
+</tr>
+<tr>
+<td>commands</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
+</tr>
+</tbody></table>
+<h3 id='attributes-4'>Attributes:</h3>
+<table><thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>grid</td>
+<td>set all the children to be appeared as a responsive row.</td>
+</tr>
+</tbody></table>
 <h2 id='button'>Button</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">button</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
 <span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_button'</span><span class="p">,</span>
 <span class="nx">text</span><span class="p">:</span> <span class="s1">'This is a sample button'</span><span class="p">,</span>
-<span class="nx">width</span><span class="p">:</span> <span class="s1">'20px'</span><span class="p">,</span>
-<span class="nx">length</span><span class="p">:</span> <span class="s1">'30px'</span><span class="p">,</span>
+<span class="nx">width</span><span class="p">:</span> <span class="s1">'200 pixels'</span><span class="p">,</span>
+<span class="nx">length</span><span class="p">:</span> <span class="s1">'100 pixels'</span><span class="p">,</span>
 <span class="nx">attributes</span><span class="p">:</span> <span class="s1">'raised &amp;&amp;&amp; switched'</span><span class="p">,</span>
-<span class="nx">font_color</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
-<span class="nx">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
-<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="nx">font_style</span><span class="p">:</span> <span class="s1">'roboto'</span><span class="p">,</span>
+<span class="nx">font_color</span><span class="p">:</span> <span class="s1">'red'</span><span class="p">,</span>
 <span class="nx">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
 <span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
 <span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
+<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50 pixels'</span><span class="p">,</span>
+<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100 pixels'</span><span class="p">,</span>
 <span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Buttons with various styles and customizations for your app or site.</p>
-
-<p>Properties:</p>
-
+<h3 id='properties-11'>Properties:</h3>
 <table><thead>
 <tr>
 <th>Property</th>
@@ -517,15 +1209,13 @@
 </tr>
 <tr>
 <td>commands</td>
-<td>The commands which will be executed when making a specific action o nthis element.</td>
+<td>The commands which will be executed when making a specific action on this element.</td>
 </tr>
 </tbody></table>
-
-<p>Attributes:</p>
-
+<h3 id='attributes-5'>Attributes:</h3>
 <table><thead>
 <tr>
-<th>Property</th>
+<th>Attribute</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
@@ -540,94 +1230,6 @@
 <tr>
 <td>disabled</td>
 <td>Determine if this button is disabled or not.</td>
-</tr>
-</tbody></table>
-<h2 id='icon'>Icon</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">an</span> <span class="nx">icon</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
-<span class="nl">name</span><span class="p">:</span> <span class="s1">'A_sample_icon'</span><span class="p">,</span>
-<span class="nx">icon</span><span class="p">:</span> <span class="s1">'heart'</span><span class="p">,</span>
-<span class="nx">font_color</span><span class="p">:</span> <span class="s1">'white'</span><span class="p">,</span>
-<span class="nx">background</span><span class="p">:</span> <span class="s1">'black'</span><span class="p">,</span>
-<span class="nx">font_size</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="nx">thickness</span><span class="p">:</span> <span class="s1">'thick'</span><span class="p">,</span>
-<span class="nx">animation</span><span class="p">:</span> <span class="s1">'bouncing'</span><span class="p">,</span>
-<span class="nx">transparency</span><span class="p">:</span> <span class="s1">'50'</span><span class="p">,</span>
-<span class="nx">distance_from_the_top</span><span class="p">:</span> <span class="s1">'50px'</span><span class="p">,</span>
-<span class="nx">distance_from_the_right</span><span class="p">:</span> <span class="s1">'100px'</span><span class="p">,</span>
-<span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
-</code></pre>
-<p>Icons which acts exactly as a text.</p>
-
-<p>Properties:</p>
-
-<table><thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>name</td>
-<td>The name you have given to this element.</td>
-</tr>
-<tr>
-<td>container</td>
-<td>The name of the container which will contain this element.</td>
-</tr>
-<tr>
-<td>icon</td>
-<td>The name of this icon you wish to add.</td>
-</tr>
-<tr>
-<td>width</td>
-<td>The generic width of this element.</td>
-</tr>
-<tr>
-<td>length</td>
-<td>The generic length of this element.</td>
-</tr>
-<tr>
-<td>font_color</td>
-<td>The color of the icon.</td>
-</tr>
-<tr>
-<td>background</td>
-<td>The background of this element.</td>
-</tr>
-<tr>
-<td>font_size</td>
-<td>The size of the icon.</td>
-</tr>
-<tr>
-<td>animation</td>
-<td>The animation of this element on loading it.</td>
-</tr>
-<tr>
-<td>transparency</td>
-<td>The transparency of this element <code>Takes a value from 1 to 100</code>.</td>
-</tr>
-<tr>
-<td>distance_from_the_top</td>
-<td>The distance between the top edge of the container contains this element and this element.</td>
-</tr>
-<tr>
-<td>distance_from_the_bottom</td>
-<td>The distance between the bottom edge of the container contains this element and this element.</td>
-</tr>
-<tr>
-<td>distance_from_the_left</td>
-<td>The distance between the left edge of the container contains this element and this element.</td>
-</tr>
-<tr>
-<td>distance_from_the_right</td>
-<td>The distance between the right edge of the container contains this element and this element.</td>
-</tr>
-<tr>
-<td>position</td>
-<td>The position state of this element <code>Takes fixed, absolute or relative</code>.</td>
-</tr>
-<tr>
-<td>commands</td>
-<td>The commands which will be executed when making a specific action on this element.</td>
 </tr>
 </tbody></table>
 <h2 id='tooltip'>Tooltip</h2><pre class="highlight javascript tab-javascript"><code><span class="nx">add</span> <span class="nx">a</span> <span class="nx">button</span> <span class="kd">with</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">properties</span><span class="p">:</span>
@@ -646,9 +1248,7 @@
 <span class="nx">commands</span><span class="p">:</span> <span class="s1">'When it has been clicked, remove it'</span><span class="p">.</span>
 </code></pre>
 <p>Tooltip to make it easier for you to add a description for any of your elements.</p>
-
-<p>Properties:</p>
-
+<h3 id='properties-12'>Properties:</h3>
 <table><thead>
 <tr>
 <th>Property</th>
@@ -712,6 +1312,134 @@
 <td>The commands which will be executed when making a specific action on this element.</td>
 </tr>
 </tbody></table>
+<h1 id='text-operators'>Text Operators</h1>
+<p>In Jste Framework, there are a group of specific universal keywords and operators used to enter special or dynamic text, and in the following you will find a list of all of these operators and their descriptions:</p>
+
+<p>Text customizing operators:</p>
+
+<table><thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&lt;&lt; write this text in a bold font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text bold.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an italic font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an underlined font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text underlined.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in a bold and italic font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text bold and italic.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in a bold and underlined font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text bold and underlined.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an italic and bold font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text bold and italic.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an italic and underlined font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic and underlined.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an underlined and bold font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text bold and underlined.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an underlined and italic font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic and underlined.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an underlined, italic and bold font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic, underlined and bold.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an underlined, bold and italic font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic, underlined and bold.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in a bold, italic and underlined font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic, underlined and bold.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in a bold, underlined and italic font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic, underlined and bold.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an italic, bold and underlined font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic, underlined and bold.</td>
+</tr>
+<tr>
+<td>&lt;&lt; write this text in an italic, underlined and bold font: YOUR_TEXT_HERE &gt;&gt;</td>
+<td>Make the text italic, underlined and bold.</td>
+</tr>
+</tbody></table>
+
+<p>Dynamic text operators:</p>
+
+<table><thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&lt;&lt; the value of AN_ELEMENT_NAME &gt;&gt;</td>
+<td>A dynamic text updated every 5 seconds contains the value of the mentioned element <code>Till now, it&#39;s supported only by the text property of the text component</code></td>
+</tr>
+</tbody></table>
+
+<p>Constants operators:</p>
+
+<table><thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&lt;&lt; the window length &gt;&gt;</td>
+<td>The height of the current viewport in pixels.</td>
+</tr>
+<tr>
+<td>&lt;&lt; the window width &gt;&gt;</td>
+<td>The width of the current viewport in pixels.</td>
+</tr>
+<tr>
+<td>&lt;&lt; the screen length &gt;&gt;</td>
+<td>The height of the device screen in pixels.</td>
+</tr>
+<tr>
+<td>&lt;&lt; the screen width &gt;&gt;</td>
+<td>The width of the device screen in pixels.</td>
+</tr>
+</tbody></table>
+
+<p>Icons operators:</p>
+
+<table><thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>&lt;&lt; an icon of THE_ICON_NAME &gt;&gt;</td>
+<td>Inserts the mentioned icon.</td>
+</tr>
+</tbody></table>
+
+<aside class="note">You can get the names of the supported icons at <a href="http://fontawesome.io/icons/">the fontawesome cheatsheet</a></aside>
 <h1 id='commands'>Commands</h1>
 <p>From the most exclusive features of Jste is the ability of programming in your natural local language which you speaks in your daily life.</p>
 
@@ -719,7 +1447,7 @@
 
 <aside class="warning">Please don't use the experimental functions in the production, as we haven't finished buildng them yet, so using them will be very risky for your application</aside>
 <h2 id='events'>Events</h2>
-<p>Most of the events in Jste English edition are started with the word <code> When </code> and end with <code> , </code> to facilitate writing and reading them and in the fowllowing you will find a list of all of these events and their descriptions:</p>
+<p>Most of the events in Jste English edition are started with the word <code> When </code> and end with <code> , </code> to facilitate writing and reading them and in the following you will find a list of all of these events and their descriptions:</p>
 
 <table><thead>
 <tr>
@@ -791,9 +1519,118 @@
 <td>When it has been scrolled,</td>
 <td>It is fired if someone scrolled this element in any direction.</td>
 </tr>
+<tr>
+<td>When the user said: A_HOT_WORD,</td>
+<td>It is fired if someone said the special hot word mentioned <code>Requires the approval microphone acsess</code>.</td>
+</tr>
 </tbody></table>
+<h2 id='timed-commands'>Timed Commands</h2>
+<p>In many cases, you don&#39;t want to execute the commands once the event has been fired as you may want to execute it after or every a specific time, so Jste Framework offers the option to modify the timing of any command you want as in the following:</p>
+<h3 id='setting-the-command-timeout'>Setting the command timeout:</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">remove</span> <span class="nx">it</span> <span class="nx">after</span> <span class="nx">a</span> <span class="nx">period</span> <span class="nx">of</span> <span class="mi">2</span> <span class="nx">hours</span>
+</code></pre>
+<p>To determine the time after which the command will be executed you have to write <code>after a period of THE_PERIOD_HERE</code> after the whole command as in the example.</p>
+<h3 id='setting-the-command-time-interval'>Setting the command time interval:</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">remove</span> <span class="nx">it</span> <span class="nx">every</span> <span class="nx">a</span> <span class="nx">period</span> <span class="nx">of</span> <span class="mi">2</span> <span class="nx">hours</span>
+</code></pre>
+<p>To determine the time every which the command will be executed you have to write <code>every a period of THE_PERIOD_HERE</code> after the whole command as in the example.</p>
+
+<p><aside class="note">To learn more about the period units, please refer to <a href="#time-periods">the periods section</a></aside>.</p>
+<h2 id='removing-elements'>Removing Elements</h2>
+<p>You can remove any element or component programmatically while the running of your site or app through the removing commands as in the following:</p>
+<h3 id='removing-the-same-element-on-which-the-event-has-been-applied'>Removing the same element on which the event has been applied</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">remove</span> <span class="nx">it</span>
+</code></pre>
+<p>You can remove the same element on which the event has been applied through the command <code>remove it</code> as in the example.</p>
+<h3 id='removing-another-element-rather-than-the-one-on-which-the-event-has-been-applied'>Removing another element rather than the one on which the event has been applied</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">remove</span> <span class="nx">THE_ELEMENT_NAME</span>
+</code></pre>
+<p>You can remove another element rather than the one on which the event has been applied by mentioning it by its name through the command <code>remove THE_ELEMENT_NAME</code> as in the example.</p>
+<h2 id='hyperlinking'>Hyperlinking</h2>
+<p>Through Jste Framework, you have the ability to add hyperlinks to any element you want. Not only activated on clicking that element, but on firing any event you specifiy.</p>
+
+<p>You can add four hyperlinks types as in the following:</p>
+<h3 id='url'>URL</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">url</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//www.google.com.eg/</span>
+</code></pre>
+<p>You can add a hyperlink to any URL through the code <code>go to the url THE_DESIRED_URL</code> as in the example.</p>
+<h3 id='email'>Email</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">email</span> <span class="nx">project</span><span class="o">-</span><span class="nx">jste</span><span class="p">@</span><span class="nd">outlook</span><span class="p">.</span><span class="nx">com</span>
+</code></pre>
+<p>You can add a hyperlink to any Email through the code <code>go to the email THE_DESIRED_EMAIL</code> as in the example.</p>
+<h3 id='page-2'>Page</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">page</span> <span class="nx">welcome_page</span>
+</code></pre>
+<p>You can add a hyperlink to any page in your site or app through the code <code>go to the email THE_DESIRED_PAGE_NAME</code> as in the example.</p>
+<h3 id='element'>Element</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">element</span> <span class="nx">post_container</span>
+</code></pre>
+<p>You can add a hyperlink to any element or component exists in your page through the code <code>go to the element THE_DESIRED_ELEMENT_NAME</code> as in the example.</p>
+<h2 id='media-controls'>Media Controls</h2>
+<p>You can control the media players programmatically and apply many commands on them like playing or pausing them as in the following:</p>
+<h3 id='playing'>Playing</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">play</span> <span class="nx">THE_ELEMENT_NAME</span>
+</code></pre>
+<p>You can play any video or audio on firing an event on any element you want by its name through the command <code>play THE_ELEMENT_NAME</code> as in the example.</p>
+<h3 id='pausing'>Pausing</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">pasue</span> <span class="nx">THE_ELEMENT_NAME</span>
+</code></pre>
+<p>You can pause any video or audio on firing an event on any element you want by its name through the command <code>pause THE_ELEMENT_NAME</code> as in the example.</p>
+<h3 id='setting-the-time-position-to-an-absolute-value'>Setting the time position to an absolute value</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">set</span> <span class="nx">the</span> <span class="nx">time</span> <span class="nx">position</span> <span class="nx">of</span> <span class="nx">THE_ELEMENT_NAME</span> <span class="nx">to</span> <span class="mi">5</span>
+</code></pre>
+<p>You can set the current time position of any video or audio to any value in seconds by its name through the command <code>set the time position of THE_ELEMENT_NAME to THE_VALUE</code> as in the example.</p>
+<h3 id='setting-the-time-position-to-a-value-of-another-element'>Setting the time position to a value of another element</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">set</span> <span class="nx">the</span> <span class="nx">time</span> <span class="nx">position</span> <span class="nx">of</span> <span class="nx">THE_ELEMENT_NAME</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">THE_RESOURCE_ELEMENT_NAME</span>
+</code></pre>
+<p>You can set the current time position of any video or audio to a value requested from another element by its name through the command <code>set the time position of THE_ELEMENT_NAME to the value of THE_RESOURCE_ELEMENT_NAME</code> as in the example.</p>
+<h2 id='elements-values'>Elements values</h2>
+<p>You can change the value of any element or component you want programmatically while the runtime of you site or app as in the following:</p>
+<h3 id='setting-the-value-of-the-current-element-to-an-absolute-value'>Setting the value of the current element to an absolute value</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">set</span> <span class="nx">its</span> <span class="nx">value</span> <span class="nx">to</span> <span class="nx">Hello</span> <span class="nx">World</span> <span class="o">!</span>
+</code></pre>
+<p>You can change the value of the element on which the event has been fired to an absolute value through the command <code>set the value of THE_ELEMENT_NAME to THE_ABSOLUTE_VALUE</code> as in the example.</p>
+<h3 id='setting-the-value-of-the-current-element-to-the-value-of-another-element'>Setting the value of the current element to the value of another element</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">set</span> <span class="nx">its</span> <span class="nx">value</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">THE_RESOURCE_ELEMENT_NAME</span>
+</code></pre>
+<p>You can change the value of the element on which the event has been fired to the value of another element through the command <code>set the value of THE_ELEMENT_NAME to the value of THE_RESOURCE_ELEMENT_NAME</code> as in the example.</p>
+<h3 id='setting-the-value-of-any-element-to-an-absolute-value'>Setting the value of any element to an absolute value</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">set</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">THE_ELEMENT_NAME</span> <span class="nx">to</span> <span class="nx">Hello</span> <span class="nx">World</span> <span class="o">!</span>
+</code></pre>
+<p>You can change the value of any element to an absolute value through the command <code>set the value of THE_ELEMENT_NAME to THE_ABSOLUTE_VALUE</code> as in the example.</p>
+<h3 id='setting-the-value-of-any-element-to-the-value-of-another-element'>Setting the value of any element to the value of another element</h3><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">set</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">THE_ELEMENT_NAME</span> <span class="nx">to</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">THE_RESOURCE_ELEMENT_NAME</span>
+</code></pre>
+<p>You can change the value of any element to the value of another element through the command <code>set the value of THE_ELEMENT_NAME to the value of THE_RESOURCE_ELEMENT_NAME</code> as in the example.</p>
+<h2 id='databases-managament'>Databases Managament</h2>
+<p><aside class="note">To use the databases management features you have to provide your firebase app information. <b>For more information: <a href="#firebase-centre">See the Firebase Centre component section.</a></b></aside>.</p>
+
+<p>Jste Framework offers various commands to manage you Google Firebase Database without any experiences as in the following:</p>
+<h3 id='inserting-data'>Inserting Data</h3>
+<p>You can insert any data based on the values of the other elements in your Firebase database as in the following:</p>
+<h4 id='inserting-data-to-the-public-database'>Inserting Data To The Public Database</h4><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="kr">public</span> <span class="nx">database</span> <span class="nx">egypt</span> <span class="nx">the</span> <span class="nx">branch</span> <span class="nx">citizines</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">insert</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">data</span><span class="p">:</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">name_input</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">address_input</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">address</span>
+</code></pre>
+<p>To insert data in the public database, you have to use the command <code>go to the public database THE_DATABASE_NAME the branch THE_BRANCH_NAME and then insert the following data: the value of THE_RESOURCE_ELEMENT in the slot THE_NAME_OF_THE_SLOT_IN_WHICH_THE_DATA_WILL_BE_STORED</code> splitting each data with <code>, </code> as in the example.</p>
+<h4 id='inserting-data-to-the-user-39-s-private-database'>Inserting Data To The User&#39;s Private Database</h4><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="kr">private</span> <span class="nx">database</span> <span class="nx">hobbies</span> <span class="nx">the</span> <span class="nx">branch</span> <span class="nx">sports</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">insert</span> <span class="nx">the</span> <span class="nx">following</span> <span class="nx">data</span><span class="p">:</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">sport1_input</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">sport1</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">sport2_input</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">sport2</span>
+</code></pre>
+<p>To insert data in the user&#39;s private database, you have to use the command <code>go to the private database THE_DATABASE_NAME the branch THE_BRANCH_NAME and then insert the following data: the value of THE_RESOURCE_ELEMENT in the slot THE_NAME_OF_THE_SLOT_IN_WHICH_THE_DATA_WILL_BE_STORED</code> splitting each data with <code>, </code> as in the example.</p>
+
+<p><aside class="note">To use this option, you have to add a login form to your site or app. <b>For more information: <a href="#login-form">See the Login Form component section.</a></b></aside>.</p>
+<h3 id='requesting-data'>Requesting Data</h3>
+<p>After inserting data in your Google Firebase database, you may want to request them later to use them in various purposes like setting them as values of the elements and the components of your site or app as in the following:</p>
+<h4 id='requesting-data-from-the-public-database'>Requesting Data From The Public Database</h4><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="kr">public</span> <span class="nx">database</span> <span class="nx">egypt</span> <span class="nx">the</span> <span class="nx">branch</span> <span class="nx">citizines</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">get</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">address</span> <span class="nx">which</span> <span class="nx">has</span> <span class="nx">the</span> <span class="nx">same</span> <span class="kr">class</span> <span class="nx">of</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">name_input</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">name</span> <span class="nx">and</span> <span class="nx">set</span> <span class="nx">it</span> <span class="nx">as</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">the_citizin_address</span>
+</code></pre>
+<p>To request data from the public database, you have to use the command <code>go to the public database THE_DATABASE_NAME the branch THE_BRANCH_NAME and then get the value of the slot THE_RESOURCE_SLOT which has the same class of the value of THE_ELEMENT_WHICH_ITS_VALUE_IS_THE_COMPARING_SLOT in the slot THE_COMPARING_SLOT and set it as the value of THE_ELEMENT_WHICH_ITS_VALUE_WILL_BE_CHANGED</code>.</p>
+<h4 id='requesting-data-from-the-user-39-s-private-database'>Requesting Data From The User&#39;s Private Database</h4><pre class="highlight javascript tab-javascript"><code><span class="nx">When</span> <span class="nx">it</span> <span class="nx">has</span> <span class="nx">been</span> <span class="nx">clicked</span><span class="p">,</span> <span class="nx">go</span> <span class="nx">to</span> <span class="nx">the</span> <span class="kr">private</span> <span class="nx">database</span> <span class="nx">hobbies</span> <span class="nx">the</span> <span class="nx">branch</span> <span class="nx">sports</span> <span class="nx">and</span> <span class="nx">then</span> <span class="nx">get</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">sport2</span> <span class="nx">which</span> <span class="nx">has</span> <span class="nx">the</span> <span class="nx">same</span> <span class="kr">class</span> <span class="nx">of</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">sport1_input</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">slot</span> <span class="nx">sport1</span> <span class="nx">and</span> <span class="nx">set</span> <span class="nx">it</span> <span class="nx">as</span> <span class="nx">the</span> <span class="nx">value</span> <span class="nx">of</span> <span class="nx">sport2</span>
+</code></pre>
+<p>To request data from the user&#39;s private database, you have to use the command <code>go to the private database THE_DATABASE_NAME the branch THE_BRANCH_NAME and then get the value of the slot THE_RESOURCE_SLOT which has the same class of the value of THE_ELEMENT_WHICH_ITS_VALUE_IS_THE_COMPARING_SLOT in the slot THE_COMPARING_SLOT and set it as the value of THE_ELEMENT_WHICH_ITS_VALUE_WILL_BE_CHANGED</code>.</p>
+
+<p><aside class="note">To use this option, you have to add a login form to your site or app. <b>For more information: <a href="#login-form">See the Login Form component section.</a></b></aside>.</p>
+<h1 id='measuring-units'>Measuring Units</h1>
+<p>This section is a reference to all the measuring units you may use during the developing of you site or app:</p>
+<h2 id='lengths'>Lengths</h2>
+<ul>
+<li>x pixel(s)</li>
+<li>x centimetre(s)</li>
+<li>x millimetre(s)</li>
+<li>x inche(s)</li>
+<li>x point(s)</li>
+<li>x pica(s)</li>
+</ul>
+<h2 id='time-periods'>Time Periods</h2>
+<ul>
+<li>a minuit / x minuits</li>
+<li>a millisecond / x milliseconds</li>
+<li>a second / x seconds</li>
+<li>an hour / x hours</li>
+<li>a day / x days</li>
+</ul>
 <h1 id='errors'>Errors</h1>
-<p>This section is a reference to various of the universal error codes:</p>
+<p>This section is a reference to various of universal error codes which you may face during your work with your project:</p>
 
 <table><thead>
 <tr>
