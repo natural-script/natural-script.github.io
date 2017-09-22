@@ -1,0 +1,529 @@
+// Templage Defult Veriables
+@import "../variable.less";
+
+// This File Import Some Helping Function
+@import "../../bootstrap/less/variables.less";
+@import "../less-function.less";
+
+// Gradient Color Variables
+@main-color-1:      #00C6FF;            // Mostly Used Gradient Background Color
+@main-color-2:      #0072FF;            // Mostly Used Gradient Background Color
+
+
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+body{
+    color:              fade(@dark-color-1, 100%);
+}
+
+p{
+    color:              fade(@dark-color-1, 100%);
+}
+
+
+/*
+ * ====================================
+ * Gradient Text and border Color
+ * ====================================
+ */
+.gradient-text {
+    background-image: -webkit-linear-gradient(
+        130deg, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), 0.85) 0%, 
+        rgba(red(@main-color-1), green(@main-color-1), blue(@main-color-1), 0.85) 100%
+    );
+    background-image: -ms-linear-gradient(
+        130deg, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), 0.85) 0%, 
+        rgba(red(@main-color-1), green(@main-color-1), blue(@main-color-1), 0.85) 100%
+    );
+    background-image: -o-linear-gradient(
+        130deg, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), 0.85) 0%, 
+        rgba(red(@main-color-1), green(@main-color-1), blue(@main-color-1), 0.85) 100%
+    );
+}
+
+.gradient-text-full {
+    background-image: -webkit-linear-gradient(
+        130deg, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), 1) 0%, 
+        rgba(red(@main-color-1), green(@main-color-1), blue(@main-color-1), 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        130deg, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), 1) 0%, 
+        rgba(red(@main-color-1), green(@main-color-1), blue(@main-color-1), 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        130deg, 
+        rgba(red(@main-color-2), green(@main-color-2), blue(@main-color-2), 1) 0%, 
+        rgba(red(@main-color-1), green(@main-color-1), blue(@main-color-1), 1) 100%
+    );
+}
+
+.gradient-border {
+    &::before {
+        .color-gradient( @alpha: 0.85 );
+    }
+    &::after {
+        background-color: @background-1;
+    }
+}
+
+
+
+/**
+ * ====================================
+ *  Every Section Headline Defult Class
+ * ====================================
+ */
+.section-heading {
+    color: fade(@dark-color-2, 100%);
+}
+
+.section-header {
+    .sub-title {
+        color: fade(@dark-color-1, 100%);
+    }
+}
+
+.light-text {
+    h1,
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6,
+    .btn * {
+        color: fade(@light-color, 100%);
+    }
+
+    p,
+    span,
+    .sub-title {
+        color: fade(@light-color, 75%);
+    }
+}
+
+section {
+    &.section {
+        background-color: @background-1;
+    }
+}
+
+
+
+/**
+ * ===============================
+ *  Section Top and Bottom padding  
+ * ===============================
+ */
+.section-separator-line {
+    border-color: fade(@shadow-color, 12%);
+}
+
+
+
+/**
+ * ====================================
+ * Background Overlay Color
+ * ====================================
+ */
+.overlay-color {
+    .color-gradient( @alpha: 0.85 );
+}
+
+.overlay-color-full {
+    .color-gradient( @alpha: 1 );
+}
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+    color: @light-color;
+
+    &.btn-fill {
+        &,
+        .icon,
+        &:hover {
+            background-color: @button-color;
+            color: @light-color;
+        }
+    }
+
+    &.btn-border {
+        background-color: transparent;
+        border-color: @button-color;
+        color: @button-color;
+
+        &:hover {
+            background-color: @button-color;
+            color: @light-color;
+        }
+    }
+
+    &:hover {
+        .box-shadow( 0, 5px, 28px, 0, fade(@shadow-color, 35%) );
+    }
+}
+
+.btn-text-link {
+    color: fade(@dark-color-2, 85%);
+
+    a {
+        color: @main-color-2;
+    }
+}
+
+
+
+
+/** 
+ * ======================
+ * Social Icon Style
+ * ======================
+ */
+.social-icon {
+    li {
+        a {
+            &,
+            &:hover {
+                color: @light-color;
+                background-color: @main-color-2;
+            }
+        }
+    }
+}
+
+
+
+/**
+ * ===================================
+ * Subscription and contact  "MESSAGE"
+ * ===================================
+ */
+.email-loading {
+    color: #52B8FF;
+}
+
+.subscription-failed, 
+.email-failed{
+    color: #FF5252 !important;
+}
+
+.subscription-success, 
+.email-success {
+    color: #56CC35;
+}
+
+
+
+
+/**
+ * =========================
+ * Form Style 
+ * =========================
+ */
+.single-form {
+    .form-control {
+        background-color: @background-1;
+        box-shadow: 0 0 0 0 #fff;
+        color: fade(@dark-color-2, 90%);
+        .placeholder-color(fade(@dark-color-2, 60%));
+    }
+
+    .select-outer {
+        &::after {
+            border-color: fade(@light-color, 100%) transparent transparent;
+        }
+    }
+}
+
+
+
+/****************************************************************
+    START MAIN CSS STYLE
+*****************************************************************/
+
+/**
+ * =======================
+ * Navigation
+ * =======================
+ */
+.main-navbar-top {
+    background-color: @background-1;
+    .box-shadow(0, 1px, 12px, 0px, fade(@shadow-color, 10%));
+
+    .navbar-header {
+        .navbar-toggle {
+            .icon-bar {
+                background-color: @main-color-2;
+            }
+        }
+    }
+
+    .okayNav__menu-toggle {
+        span {
+            background-color: @dark-color-2;
+        }
+        
+        &.icon--active {
+            span {
+                background-color: @main-color-2;
+            }
+        }
+    }
+
+    ul {
+        li {
+            .btn-nav {
+                color: fade(@dark-color-2, 100%);
+
+                &:before {
+                    background-color: @main-color-2;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: fade(@main-color-2, 100%);
+                }
+            }
+
+            &.active {
+                .btn-nav {
+                    color: fade(@main-color-2, 100%);
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * ===============================
+ * Header Style 1
+ * ===============================
+*/
+.header-section-1 {
+    .title {
+        color: @light-color;
+    }
+
+    .image-group {
+        img {
+            .box-shadow( 0, 5px, 28px, 0, fade(@shadow-color, 35%) );
+        }
+    }
+}
+
+
+
+
+
+/**
+ * ====================================
+ * Features Style 1
+ * ====================================
+ */
+.features-section-1 {
+    .feature-item {
+        .title {
+            color: @dark-color-2;
+        }
+    }
+}
+
+
+
+/**
+ * ====================================
+ * Features Style 2 
+ * ====================================
+ */
+.features-section-2 {
+    .features-item {
+        .icon-outer {
+            background-color: @background-1;
+            .box-shadow( 0px, 5px, 16px, 0px, fade(@shadow-color, 22%) );
+        }
+        
+        &::after,
+        &::before {
+            border-color: fade(@light-color, 55%);
+        }
+        &:last-child {
+            &::after {
+                border-color: transparent;
+            }
+        }
+        &:first-child {
+            &::before {
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Features Style 3 
+ * ====================================
+ */
+.features-section-3 {
+    .features-list {
+        .media {
+            .title {
+                color: @dark-color-2;
+            }
+        }
+    }
+}
+
+.app-swiper-slide {
+    .swiper-pagination {
+        .swiper-pagination-bullet{
+            background-color: @main-color-2;
+
+            &::before {
+                border-color: @main-color-2;
+            }
+        } 
+        
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Features Style 4
+ * ====================================
+ */
+.features-section-4 {
+    .single-form {
+        .input-group {
+            background-color: @background-1;
+            .box-shadow( 0, 5px, 28px, 0, fade(@shadow-color, 35%) );
+        }
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Features Style 5
+ * ====================================
+ */
+.features-section-5 {
+    .swiper-wrapper {
+        blockquote {
+            color: fade(@light-color, 100%);
+        }
+
+        .name {
+            color: @light-color;
+        }
+
+        .position {
+            color: @light-color;
+        }
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Footer Section 1
+ * ====================================
+ */
+.footer-section-1 {
+    background-color: @background-1;
+
+    .title {
+        color: @main-color-2;
+    }
+
+    .each-item {
+        border-right-color: fade(@shadow-color, 12%);
+    }
+}
+
+
+
+
+/**
+ * ====================================
+ * Contact Form
+ * ====================================
+ */
+.contact-form {
+    .title {
+        color: @dark-color-2;
+    }
+
+    .single-form {
+        .form-control {
+            border-color: fade(@shadow-color, 12%);
+
+            &:focus {
+                border-color: @main-color-2;
+            }
+        }
+    }
+}
+
+
+@media (max-width: @screen-xs-max) {
+
+    /**
+     * =======================
+     * Navigation
+     * =======================
+     */
+    .main-navbar-top {
+        .navbar-header {
+            .navbar-toggle {
+                .icon-bar {
+                    background-color: @main-color-2;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            border-top-color: fade(@shadow-color, 8%);
+        }
+    }
+
+
+
+    /**
+     * ====================================
+     * Footer Section 1
+     * ====================================
+     */
+    .footer-section-1 {
+        .each-item {
+            border-bottom-color: fade(@shadow-color, 8%);
+        }
+    }
+
+    
+
+}
