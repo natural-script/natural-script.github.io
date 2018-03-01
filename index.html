@@ -44,8 +44,8 @@
         <link rel="stylesheet" href="css/responsive.css">
 
         <!-- COLOR -->
-        <link rel="stylesheet" href="css/colors/color-1.css" type="text/css" id="color-scheme" />
-        <!-- <link rel="stylesheet" href="css/colors/color-2.css" type="text/css"/> -->
+        <!-- <link rel="stylesheet" href="css/colors/color-1.css" type="text/css" id="color-scheme" /> -->
+        <link rel="stylesheet" href="css/colors/color-2.css" type="text/css"/>
         <!-- <link rel="stylesheet" href="css/colors/color-3.css" type="text/css"/> -->
 
         <!--[if lt IE 9]>
@@ -86,10 +86,10 @@
 
                         <nav role="navigation" class="okayNav pull-right" id="js-navbar-menu">
                             <ul id="navbar-nav" class="navbar-nav">
-                                <li><a class="btn-nav" href="#features">Features</a></li>
-                                <li><a class="btn-nav" href="#contribute">Contribute</a></li>
-                                <li><a class="btn-nav" href="#see-it-in-action">See It In Action</a></li>
-                                <li><a class="btn-nav" href="#download">Download</a></li>
+                                <li><a class="btn-nav" href="#features" onclick="goTo('#features');">Features</a></li>
+                                <li><a class="btn-nav" href="#contribute" onclick="goTo('#contribute');">Contribute</a></li>
+                                <li><a class="btn-nav" href="#see-it-in-action" onclick="goTo('#see-it-in-action');">See It In Action</a></li>
+                                <li><a class="btn-nav" href="#download" onclick="goTo('#download');">Download</a></li>
                             </ul>
                         </nav>
 
@@ -372,7 +372,7 @@
                         <!-- Start: Section Heading -->
                         <div class="section-header col-md-10 col-md-offset-1">
                             <h2 class="section-heading">Compatible With Most Of Modern Browsers</h2>
-                            <p class="sub-title">And More Browsers Are On Their Way</p>
+                            <p class="sub-title">And More Are On Their Way</p>
                         </div>
                         <!-- End: Section Heading -->
 
@@ -442,7 +442,7 @@
                         <!-- End: Section Heading -->
 
                         <div class="detail">
-                            <p>Till this moment, Jste has been ported officially to just 4 flavours which are mentioned below as the project is still in the Alpha stage, but we are looking forward to port it to every language exists in the world.....!</p>
+                            <p>Till this moment, Jste has been ported officially to just 4 flavours which are mentioned below as the project is still in its Alpha stage, but we are looking forward to port it to every language exists in the world.....!</p>
                         </div> <!-- End: .detail -->
 
                         <div class="row features-list">
@@ -454,7 +454,7 @@
                                     </div>
                                     <div class="media-body">
                                         <h5 class="title">English</h5>
-                                        <p>Including English US & English UK with slightly difference between each of them.</p>
+                                        <p>Including English US & English UK with slightly differences between each of them.</p>
                                     </div>
                                 </div> <!-- End: .melia -->
                             </div>
@@ -537,7 +537,7 @@
 
                         <div class="section-header col-md-10 col-md-offset-1">
                                 <h2 class="section-heading gradient-text-full">See It In Action</h2>
-                                <p class="sub-title">or click <a href="jste://http://jste-demos.herokuapp.com/en-uk/calculator.html?page=calculator">here</a> to try the Jste-Powered calulator app on Android<b>*</b></p>
+                                <p class="sub-title">or click <a href="jste://http://jste-demos.herokuapp.com/en-uk/calculator.html?page=calculator">here</a> to try the Jste-Powered calulator instant app on Android<b>*</b></p>
                             </div>
 
                     <div class="col-xs-12">
@@ -585,7 +585,7 @@
                             <div class="swiper-pagination "></div>
 
                         </div> <!-- End: .testimonials-thumb -->
-<p>* You have to install Jste Manager app on your Android device to be able to try the app.</p>
+<p>* You have to install Jste Manager app on your Android device to be able to try the calcualtor instant app.</p>
                     </div> <!-- End: .col-sm-6 -->
 
                 </div> <!-- End: .row -->
@@ -606,8 +606,8 @@
                         
                         <!-- Start: Section Heading -->
                         <div class="section-header col-md-10 col-md-offset-1">
-                            <h2 class="section-heading">Download Jste Manager Now!</h2>
-                            <p class="sub-title">To Enjoy The Full Jste Experience !</p>
+                            <h2 class="section-heading">Download Jste Manager Now</h2>
+                            <p class="sub-title">To Enjoy The Full Jste Experience</p>
                         </div>
                         <!-- End: Section Heading -->
 
@@ -635,7 +635,7 @@
                             <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-alpine-x64" class="btn btn-icon left-icon btn-fill">
                                 <i class="fa fa-linux"></i>
                                 <span class="btn-text">Alpine x64</span>
-                            </a> <!-- End: .linux -->
+                            </a> <!-- End: .alpine -->
                             <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-macos-x64" class="btn btn-icon left-icon btn-fill">
                                 <i class="fa fa-apple"></i>
                                 <span class="btn-text">Mac OS X x86</span>
@@ -647,7 +647,11 @@
                             <a href="https://github.com/project-jste/manager-phone/raw/master/dist/android-debug.apk" class="btn btn-icon left-icon btn-fill">
                                 <i class="fa fa-android"></i>
                                 <span class="btn-text">Android</span>
-                            </a> <!-- End: .android -->
+                            </a> <!-- End: .android --> 
+<a disabled class="btn btn-icon left-icon btn-fill">
+                                <i class="fa fa-apple"></i>
+                                <span class="btn-text">IOS ( Needs A Contributer With A Mac Device To be Built )</span>
+                            </a> <!-- End: .ios -->
 
                         </div>
                         <!-- End: Download Button -->
@@ -743,6 +747,9 @@
 
 
         <script>
+function goTo (target) {
+	location.href = target;
+}
                 var typed = new Typed('.showcaseText', {
                     strings: ['add a text with the following properties:<br>its name is welcome_message,<br>its text is Hello World,<br>its font colour is blue,<br>its font size is 20 pixels,<br>its font thickness is thick.<br><br>add a raised button with the following properties:<br>its name is font_colour_changer,<br>its text is Change the welcome_text font colour,<br>its commands are When it has been clicked, set the font colour of welcome_message to yellow.', 
                     'add a text with the following properties:<br>its name is welcome_message,<br>its text is Hello World,<br>its font color is blue,<br>its font size is 20 pixels,<br>its font thickness is thick.<br><br>add a raised button with the following properties:<br>its name is font_colour_changer,<br>its text is Change the welcome_text font color,<br>its commands are When it has been clicked, set the font color of welcome_message to yellow.', 

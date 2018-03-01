@@ -1127,9 +1127,9 @@ section.section {
 }
 
 .showcaseTitlebar {
-  background-image: -webkit-linear-gradient(130deg, #4954de 0%, #aa49de 100%);
-  background-image: -ms-linear-gradient(130deg, #4954de 0%, #aa49de 100%);
-  background-image: -o-linear-gradient(130deg, #4954de 0%, #aa49de 100%);
+  background-image: -webkit-linear-gradient(130deg, #0072ff 0%, #00c6ff 100%);
+  background-image: -ms-linear-gradient(130deg, #0072ff 0%, #00c6ff 100%);
+  background-image: -o-linear-gradient(130deg, #0072ff 0%, #00c6ff 100%);
   color: #FFFFFF;
   font-size: 11pt;
   line-height: 28px;
