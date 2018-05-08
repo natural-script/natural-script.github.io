@@ -3,778 +3,962 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="en">
-    <head>     
-  
-        <!-- TITLE OF SITE --> 
-        <title>Project Jste</title>
-  
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta property="og:image" content="https://project-jste.github.io/images/social-sharing-thumbnail.jpg">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="900">
-        <meta property="og:image:height" content="600">
-        <meta property="og:title" content="Project Jste">
-        <meta property="og:description" content="Meet the first translated JS framework...!">
-        <meta name="google-site-verification" content="jVPgdjNkqQ_j2j4urcMPharvnOZ6ftWDmBcLfE6lu0A" />
-        <meta name="description" content="app landing page template" />
-        <meta name="keywords" content="rik, landing page, gradient background, image background, video background, template, responsive, bootstrap" />
-        <meta name="developer" content="TemplateOcean">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- FAV AND TOUCH ICONS   -->
-        <link rel="icon" href="images/favicon.ico">
+<head>
 
-        <!-- GOOGLE FONTS -->
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- TITLE OF SITE -->
+    <title>Project Jste</title>
 
-        <!-- BOOTSTRAP CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta property="og:image" content="https://project-jste.github.io/images/social-sharing-thumbnail.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="600">
+    <meta property="og:title" content="Project Jste">
+    <meta property="og:description" content="Meet the first translated JS framework...!">
+    <meta name="google-site-verification" content="jVPgdjNkqQ_j2j4urcMPharvnOZ6ftWDmBcLfE6lu0A" />
+    <meta name="description" content="app landing page template" />
+    <meta name="keywords" content="rik, landing page, gradient background, image background, video background, template, responsive, bootstrap"
+    />
+    <meta name="developer" content="TemplateOcean">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- POP UP IMAGE AND VIDEO -->
-        <link rel="stylesheet" href="css/plagin-css/plagin.css">
+    <!-- FAV AND TOUCH ICONS   -->
+    <link rel="icon" href="images/favicon.ico">
 
-        <!-- FONT ICONS -->
-        <link rel="stylesheet" href="icons/rik-icons/styles.css">
-        <link rel="stylesheet" href="icons/font-awesome/fontawesome-all.min.css">
-        <link rel="stylesheet" href="icons/flag-icon/css/flag-icon.css">
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
-        <!--   COUSTOM CSS link  -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
-        <!-- COLOR -->
-        <!-- <link rel="stylesheet" href="css/colors/color-1.css" type="text/css" id="color-scheme" /> -->
-        <link rel="stylesheet" href="css/colors/color-2.css" type="text/css"/>
-        <!-- <link rel="stylesheet" href="css/colors/color-3.css" type="text/css"/> -->
+    <!-- POP UP IMAGE AND VIDEO -->
+    <link rel="stylesheet" href="css/plagin-css/plagin.css">
 
-        <!--[if lt IE 9]>
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="icons/rik-icons/styles.css">
+    <link rel="stylesheet" href="icons/font-awesome/fontawesome-all.min.css">
+    <link rel="stylesheet" href="icons/flag-icon/css/flag-icon.css">
+
+    <!--   COUSTOM CSS link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- COLOR -->
+    <!-- <link rel="stylesheet" href="css/colors/color-1.css" type="text/css" id="color-scheme" /> -->
+    <link rel="stylesheet" href="css/colors/color-2.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/colors/color-3.css" type="text/css"/> -->
+
+    <!--[if lt IE 9]>
             <script src="js/plagin-js/html5shiv.js"></script>
             <script src="js/plagin-js/respond.min.js"></script>
         <![endif]-->
 
-    </head>
-    <body class="body-video-bg">
+</head>
+
+<body class="body-video-bg">
 
 
-        <!-- Start: Background Video 
+    <!-- Start: Background Video 
         ================================-->
-        <div class="section-video">
-            <video autoplay="" poster="video/video.png" class="bgvid" loop="">
-                <source src="video/video.webm" type="video/webm">
-                <source src="video/video.mp4" type="video/mp4">
-                <source src="video/video.ogv" type="video/ogv">
-            </video>
+    <div class="section-video">
+        <video autoplay="" poster="video/video.png" class="bgvid" loop="">
+            <source src="video/video.webm" type="video/webm">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+        </video>
+    </div>
+    <!-- End: Background Video 
+        ================================-->
+
+
+    <!-- Start: Navbar Area
+        ============================= -->
+    <header id="header" class="okayNav-header navbar-fixed-top main-navbar-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+                    <!-- TEMPLATE LOGO LIGHT -->
+                    <a class="navbar-brand light-logo" href="index.html">
+                        <img src="images/logo-color.png" alt="" class="img-responsive">
+                    </a>
+
+                </div>
+                <!-- End: .col-xs-3 -->
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
+
+                    <nav role="navigation" class="okayNav pull-right" id="js-navbar-menu">
+                        <ul id="navbar-nav" class="navbar-nav">
+                            <li>
+                                <a class="btn-nav" href="#features" onclick="goTo('#features');">Features</a>
+                            </li>
+                            <li>
+                                <a class="btn-nav" href="#contribute" onclick="goTo('#contribute');">Contribute</a>
+                            </li>
+                            <li>
+                                <a class="btn-nav" href="#see-it-in-action" onclick="goTo('#see-it-in-action');">See It In Action</a>
+                            </li>
+                            <li>
+                                <a class="btn-nav" href="#download" onclick="goTo('#download');">Download</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <!-- End: .col-xs-9 -->
+            </div>
+            <!-- End: .row -->
         </div>
-        <!-- End: Background Video 
-        ================================-->
-
-
-        <!-- Start: Navbar Area
-        ============================= -->
-        <header id="header" class="okayNav-header navbar-fixed-top main-navbar-top">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-
-                        <!-- TEMPLATE LOGO LIGHT -->
-                        <a class="navbar-brand light-logo" href="index.html"><img src="images/logo-color.png" alt="" class="img-responsive"></a>
-
-                    </div> <!-- End: .col-xs-3 -->
-                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
-
-                        <nav role="navigation" class="okayNav pull-right" id="js-navbar-menu">
-                            <ul id="navbar-nav" class="navbar-nav">
-                                <li><a class="btn-nav" href="#features" onclick="goTo('#features');">Features</a></li>
-                                <li><a class="btn-nav" href="#contribute" onclick="goTo('#contribute');">Contribute</a></li>
-                                <li><a class="btn-nav" href="#see-it-in-action" onclick="goTo('#see-it-in-action');">See It In Action</a></li>
-                                <li><a class="btn-nav" href="#download" onclick="goTo('#download');">Download</a></li>
-                            </ul>
-                        </nav>
-
-                    </div> <!-- End: .col-xs-9 -->
-                </div> <!-- End: .row -->
-            </div> <!-- End: .container -->
-        </header><!-- /header -->
-        <!-- End: Navbar Area
+        <!-- End: .container -->
+    </header>
+    <!-- /header -->
+    <!-- End: Navbar Area
         ============================= -->
 
-        
-        <!-- Start: Header Section
+
+    <!-- Start: Header Section
         ================================ -->
-        <section class="header-section-1 header-js" id="header" >
-            <div class="overlay-color">
-                <div class="container">
-                    <div class="row section-separator sp-top">
+    <section class="header-section-1 header-js" id="header">
+        <div class="overlay-color">
+            <div class="container">
+                <div class="row section-separator sp-top">
 
-                        <div class="part-1 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                            <div class="part-inner text-center mr-small">
+                    <div class="part-1 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="part-inner text-center mr-small">
 
-                                <!-- Main Logo -->
-                                <a href="index.html" class="logo-link">
-                                    <img src="images/logo.png" alt="" class="img-responsive logo">
-                                </a>
+                            <!-- Main Logo -->
+                            <a href="index.html" class="logo-link">
+                                <img src="images/logo.png" alt="" class="img-responsive logo">
+                            </a>
+                            <div>
+                                <a class="github-button" href="https://github.com/project-jste/framework" data-icon="octicon-star" data-size="large" data-show-count="true"
+                                    aria-label="Star project-jste/framework on GitHub">Star</a>
+                                <div class="fb-like" style="top: -7px;" data-href="https://www.facebook.com/ProjectJste/" data-layout="button_count" data-action="like" data-size="large"
+                                    data-show-faces="true" data-share="true"></div>
+                                <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">Tweet</a>
+                            </div>
+                            <!--  Header SubTitle Goes here -->
+                            <h1 class="title">The First Translated JS Framework In The World</h1>
 
-                                <!--  Header SubTitle Goes here -->
-                                <h1 class="title">The First Translated JS Framework In The World</h1> 
+                            <!-- Button Area -->
+                            <div class="btn-form m-t-40 btn-scroll">
+                                <a href="#features" class="btn btn-fill">Learn More</a>
+                            </div>
 
-                                <!-- Button Area -->
-                                <div class="btn-form m-t-40 btn-scroll">
-                                    <a href="#features" class="btn btn-fill">Learn More</a>
-                                </div>
-                                
-                                <!-- Mobile App Image -->
-                                <div class="image-group">
-                                    <!--<img src="images/home-left.png" alt="" class="home-left img-responsive">
+                            <!-- Mobile App Image -->
+                            <div class="image-group">
+                                <!--<img src="images/home-left.png" alt="" class="home-left img-responsive">
                                     <img src="images/home-center.png" alt="" class="home-center img-responsive">
                                     <img src="images/home-right.png" alt="" class="home-right img-responsive">-->
 
                                 <div class="showcaseWindow">
-                                        <div class="showcaseTitlebar">
-                                          <div class="showcaseButtons">
+                                    <div class="showcaseTitlebar">
+                                        <div class="showcaseButtons">
                                             <div class="showcaseClose">
                                             </div>
                                             <div class="showcaseMinimize">
                                             </div>
                                             <div class="showcaseZoom">
                                             </div>
-                                          </div>
-                                          Untitled Project
-                                          <!-- window title -->
                                         </div>
-                                        <div class="showcaseContent">
-                                            <code class="showcaseText"></code>
-                                        </div>
-                                      </div>
+                                        Untitled Project
+                                        <!-- window title -->
+                                    </div>
+                                    <div class="showcaseContent">
+                                        <code class="showcaseText"></code>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div> <!-- End: .part-1 -->
 
-                    </div> <!-- End: .row -->
-                </div> <!-- End: .container -->
-            </div> <!-- End: .overlay-color -->
-        </section>
-        <!-- End: Header Section
+                        </div>
+                    </div>
+                    <!-- End: .part-1 -->
+
+                </div>
+                <!-- End: .row -->
+            </div>
+            <!-- End: .container -->
+        </div>
+        <!-- End: .overlay-color -->
+    </section>
+    <!-- End: Header Section
         ================================ -->
 
 
 
-        <!-- Start: Features Section 1
+    <!-- Start: Features Section 1
         ================================== -->
-        <section class="features-section-1 section" id="features">
+    <section class="features-section-1 section" id="features">
+        <div class="container">
+            <div class="row section-separator">
+
+                <!-- Start: Section Heading -->
+                <div class="section-header col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Jste Features</h2>
+                    <!--<p class="sub-title"></p>-->
+                </div>
+                <!-- End: Section Heading -->
+
+                <div class="part-1 col-xs-12">
+                    <div class="row">
+
+                        <div class="vertical-middle col-md-4 col-sm-6 col-sm-offset-3 ">
+
+                            <!-- Each Features Item -->
+                            <div class="feature-item text-center">
+
+                                <div class="gradient-border">
+                                    <i class="icon features-icon gradient-text fa fa-language"></i>
+                                </div>
+
+                                <div class="feature-content text-center">
+                                    <h3 class="title">Translated</h3>
+                                    <p>Jste Framework syntax has been translated to various languages from all around the world
+                                        to make programming easier and simpler for everyone who hasn't any programming experience.</p>
+                                </div>
+
+                            </div>
+                            <!-- End: .feature-item -->
+
+                            <!-- Each Features Item -->
+                            <div class="feature-item text-center">
+
+                                <div class="gradient-border">
+                                    <i class="icon features-icon gradient-text fa fa-rocket"></i>
+                                </div>
+
+                                <div class="feature-content text-center">
+                                    <h3 class="title">Fast & Thrifty</h3>
+                                    <p>Jste-Powered apps and sites only stored in one small easy-to-read HTML file and the framework
+                                        itself is stored locally in a small minified HTML file which saves data and loading
+                                        time, in addition to that no media will be downloaded without your permission.</p>
+                                </div>
+
+                            </div>
+                            <!-- End: .feature-item -->
+
+                        </div>
+                        <!-- End: .col-md-4 -->
+
+                        <div class="vertical-middle col-md-4 col-sm-6 col-sm-offset-3">
+
+                            <!-- Each Features Item -->
+                            <div class="feature-item text-center">
+
+                                <div class="gradient-border">
+                                    <i class="icon features-icon gradient-text fa fa-paint-brush"></i>
+                                </div>
+
+                                <div class="feature-content text-center">
+                                    <h3 class="title">Sexy</h3>
+                                    <p>All Jste components have been deisgned carefully according to the latest modern
+                                        <a href="https://material.io/">Google Material Design</a> guidlines thanks to
+                                        <a href="http://materializecss.com/">Materialize</a> and
+                                        <a href="https://www.polymer-project.org/">Polymer Framework</a>.</p>
+                                </div>
+
+                            </div>
+                            <!-- End: .feature-item -->
+
+                            <!-- Each Features Item -->
+                            <div class="feature-item text-center">
+
+                                <div class="gradient-border">
+                                    <i class="icon features-icon gradient-text fas fa-handshake"></i>
+                                </div>
+
+                                <div class="feature-content text-center">
+                                    <h3 class="title">Open Source</h3>
+                                    <p>Because we believe that open source is the main key of the projects success, we have
+                                        licensed Jste under
+                                        <b>AGPL v3.0</b> to give all the developers all around the world the ability to extend
+                                        this project and its components and port it to their own local languages.</p>
+                                </div>
+
+                            </div>
+                            <!-- End: .feature-item -->
+
+                        </div>
+                        <!-- End: .col-md-4 -->
+
+                    </div>
+                    <!-- End: .row -->
+                </div>
+                <!-- End: .part-1 -->
+
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 1
+        ================================== -->
+
+
+
+
+    <!-- Start: Features Section 2
+        ================================== -->
+    <section class="features-section-2" id="how-it-works">
+        <div class="overlay-color">
             <div class="container">
-                <div class="row section-separator">
-                    
+                <div class="row section-separator light-text">
+
                     <!-- Start: Section Heading -->
                     <div class="section-header col-md-10 col-md-offset-1">
-                        <h2 class="section-heading">Jste Features</h2>
-                        <!--<p class="sub-title"></p>-->
+                        <h2 class="section-heading">Say Goodbye To These Old Friends</h2>
+                        <p class="sub-title">Thanks To The Simplest Syntax Ever</p>
                     </div>
                     <!-- End: Section Heading -->
 
                     <div class="part-1 col-xs-12">
                         <div class="row">
 
-                            <div class="vertical-middle col-md-4 col-sm-6 col-sm-offset-3 ">
+                            <div class="features-item text-center col-sm-3 col-xs-12">
 
-                                <!-- Each Features Item -->
-                                <div class="feature-item text-center">
+                                <div class="icon-outer">
+                                    <b class="icon features-icon gradient-text-full" style="font-size: 25px;">;</b>
+                                </div>
 
-                                    <div class="gradient-border">
-                                        <i class="icon features-icon gradient-text fa fa-language"></i>
-                                    </div>
+                                <h4 class="title m-t-30">Semicolon</h4>
 
-                                    <div class="feature-content text-center">
-                                        <h3 class="title">Translated</h3>
-                                        <p>Jste Framework syntax has been translated to various languages from all around the world to make programming easier and simpler for everyone who hasn't any programming experience.</p>
-                                    </div>
+                            </div>
+                            <div class="features-item text-center col-sm-3 col-xs-12">
 
-                                </div> <!-- End: .feature-item -->
+                                <div class="icon-outer">
+                                    <b class="icon features-icon gradient-text-full" style="font-size: 25px;">{ }</b>
+                                </div>
 
-                                <!-- Each Features Item -->
-                                <div class="feature-item text-center">
-                                    
-                                    <div class="gradient-border">
-                                        <i class="icon features-icon gradient-text fa fa-rocket"></i>
-                                    </div>
+                                <h4 class="title m-t-30">Brace</h4>
 
-                                    <div class="feature-content text-center">
-                                        <h3 class="title">Fast & Thrifty</h3>
-                                        <p>Jste-Powered apps and sites only stored in one small easy-to-read HTML file and the framework itself is stored locally in a small minified HTML file which saves data and loading time, in addition to that no media will be downloaded without your permission.</p>
-                                    </div>
+                            </div>
+                            <div class="features-item text-center col-sm-3 col-xs-12">
 
-                                </div> <!-- End: .feature-item -->
+                                <div class="icon-outer">
+                                    <b class="icon features-icon gradient-text-full" style="font-size: 25px;">&lt;/&gt;</b>
+                                </div>
 
-                            </div> <!-- End: .col-md-4 -->
+                                <h4 class="title m-t-30">Tag</h4>
 
-                            <div class="vertical-middle col-md-4 col-sm-6 col-sm-offset-3">
+                            </div>
+                            <div class="features-item text-center col-sm-3 col-xs-12">
 
-                                <!-- Each Features Item -->
-                                <div class="feature-item text-center">
+                                <div class="icon-outer">
+                                    <b class="icon features-icon gradient-text-full" style="font-size: 25px;">" "</b>
+                                </div>
 
-                                    <div class="gradient-border">
-                                        <i class="icon features-icon gradient-text fa fa-paint-brush"></i>
-                                    </div>
-                                    
-                                    <div class="feature-content text-center">
-                                        <h3 class="title">Sexy</h3>
-                                        <p>All Jste components have been deisgned carefully according to the latest modern <a href="https://material.io/">Google Material Design</a> guidlines thanks to <a href="http://materializecss.com/">Materialize</a> and <a href="https://www.polymer-project.org/">Polymer Framework</a>.</p>
-                                    </div>
+                                <h4 class="title m-t-30">Quotation Marks</h4>
 
-                                </div> <!-- End: .feature-item -->
+                            </div>
 
-                                <!-- Each Features Item -->
-                                <div class="feature-item text-center">
-                                    
-                                    <div class="gradient-border">
-                                        <i class="icon features-icon gradient-text fas fa-handshake"></i>
-                                    </div>
-                                    
-                                    <div class="feature-content text-center">
-                                        <h3 class="title">Open Source</h3>
-                                        <p>Because we believe that open source is the main key of the projects success, we have licensed Jste under <b>AGPL v3.0</b> to give all the developers all around the world the ability to extend this project and its components and port it to their own local languages.</p>
-                                    </div>
-
-                                </div> <!-- End: .feature-item -->
-
-                            </div> <!-- End: .col-md-4 -->
-
-                        </div> <!-- End: .row -->
-                    </div> <!-- End: .part-1 -->
-
-                </div> <!-- End: .row -->
-            </div> <!-- End: .container -->
-        </section>
-        <!-- End: Features Section 1
-        ================================== -->
-
-
-
-
-        <!-- Start: Features Section 2
-        ================================== -->
-        <section class="features-section-2" id="how-it-works">
-            <div class="overlay-color">
-                <div class="container">
-                    <div class="row section-separator light-text">
-                        
-                        <!-- Start: Section Heading -->
-                        <div class="section-header col-md-10 col-md-offset-1">
-                            <h2 class="section-heading">Say Goodbye To These Old Friends</h2>
-                            <p class="sub-title">Thanks To The Simplest Syntax Ever</p>
                         </div>
-                        <!-- End: Section Heading -->
+                        <!-- End: .row -->
+                    </div>
+                    <!-- End: .part-1 -->
 
-                        <div class="part-1 col-xs-12">
-                            <div class="row">
-                                
-                                <div class="features-item text-center col-sm-3 col-xs-12">
-
-                                    <div class="icon-outer">
-                                        <b class="icon features-icon gradient-text-full" style="font-size: 25px;">;</b>
-                                    </div>
-
-                                    <h4 class="title m-t-30">Semicolon</h4>
-
-                                </div>
-                                <div class="features-item text-center col-sm-3 col-xs-12">
-
-                                    <div class="icon-outer">
-                                            <b class="icon features-icon gradient-text-full" style="font-size: 25px;">{ }</b>
-                                    </div>
-
-                                    <h4 class="title m-t-30">Brace</h4>
-
-                                </div>
-                                <div class="features-item text-center col-sm-3 col-xs-12">
-
-                                    <div class="icon-outer">
-                                            <b class="icon features-icon gradient-text-full" style="font-size: 25px;">&lt;/&gt;</b>
-                                    </div>
-
-                                    <h4 class="title m-t-30">Tag</h4>
-
-                                </div>
-                                <div class="features-item text-center col-sm-3 col-xs-12">
-
-                                    <div class="icon-outer">
-                                            <b class="icon features-icon gradient-text-full" style="font-size: 25px;">" "</b>
-                                    </div>
-
-                                    <h4 class="title m-t-30">Quotation Marks</h4>
-
-                                </div>
-
-                            </div> <!-- End: .row -->
-                        </div> <!-- End: .part-1 -->
-
-                    </div> <!-- End: .row -->
-                </div> <!-- End: .container -->
+                </div>
+                <!-- End: .row -->
             </div>
-        </section>
-        <!-- End: Features Section 2
+            <!-- End: .container -->
+        </div>
+    </section>
+    <!-- End: Features Section 2
         ================================== -->
 
 
 
 
-        <!-- Start: Features Section 3
+    <!-- Start: Features Section 3
         ================================== -->
-        <section class="features-section-3 section" id="describe">
+    <section class="features-section-3 section" id="describe">
+        <div class="container">
+            <div class="row section-separator">
+
+                <div class="features-image col-md-6 col-md-push-6">
+                    <img src="images/ide.png" alt="App Picture" class="img-responsive pull-right ide-vector">
+
+                </div>
+                <div class="features-content m-t-50 col-md-6 col-md-pull-6">
+
+                    <!-- Start: Section Heading -->
+                    <div class="section-header text-left m-b-30">
+                        <h2 class="section-heading gradient-text-full">Fully Plain Text Syntax</h2>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                    <div class="detail">
+                        <p>Jste syntax is fully plain, simplified and translated which means that if you want to develop anything
+                            using it, all what you have to do is opening a HTML file and writing plain text in your local
+                            language which everyone familiar with your langauage can understand it without even if he/she
+                            doesn't know
+                            <b>WHAT THE COMPUTER IS !</b>
+                        </p>
+                        <p>This will help the noob people espicially in the poor countries to take part in the fastly growing
+                            technology world and the world wide web.....</p>
+                    </div>
+                    <!-- End: .detail -->
+
+                    <!-- Button Area -->
+                    <div class="m-t-50">
+                        <a class="btn btn-fill" href="docs" target="_blank">DOCUMENTATION</a>
+                        <a href="https://www.youtube.com/watch?v=csq5LR-sYvI" class="btn btn-icon left-icon btn-border popup-video">
+                            <i class="icon icon-arrow-triangle-right-alt2"></i>
+                            <span class="btn-text">WATCH VIDEO</span>
+                        </a>
+                        <!-- End: .androad -->
+                    </div>
+
+                </div>
+                <!-- End: .features-content -->
+
+            </div>
+            <!-- End: .row -->
+
+        </div>
+        <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 3
+        ================================== -->
+
+
+    <!-- Start: Features Section 2
+        ================================== -->
+    <section class="features-section-2" id="how-it-works">
+        <div class="overlay-color">
             <div class="container">
-                <div class="row section-separator">
-                    
-                    <div class="features-image col-md-6 col-md-push-6">
-                        <img src="images/ide.png" alt="App Picture" class="img-responsive pull-right ide-vector">
+                <div class="row section-separator light-text">
+
+                    <!-- Start: Section Heading -->
+                    <div class="section-header col-md-10 col-md-offset-1">
+                        <h2 class="section-heading">Compatible With Most Of Modern Browsers</h2>
+                        <p class="sub-title">And More Are On Their Way</p>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                    <div class="part-1 col-xs-12">
+                        <div class="row">
+
+                            <div class=" text-center col-sm-2 col-xs-4">
+
+                                <img src="./images/browsers-logos/chrome.svg" width="90" height="90" />
+
+                            </div>
+                            <div class=" text-center col-sm-2 col-xs-4">
+
+                                <img src="./images/browsers-logos/firefox.svg" width="90" height="90" />
+
+                            </div>
+                            <div class=" text-center col-sm-2 col-xs-4">
+
+                                <img src="./images/browsers-logos/edge.svg" width="90" height="90" />
+
+                            </div>
+                            <div class=" text-center col-sm-2 col-xs-4">
+
+                                <img src="./images/browsers-logos/safari.png" width="90" height="90" />
+
+                            </div>
+                            <div class=" text-center col-sm-2 col-xs-4">
+
+                                <img src="./images/browsers-logos/opera.svg" width="90" height="90" />
+
+                            </div>
+                            <div class=" text-center col-sm-2 col-xs-4">
+
+                                <img src="./images/browsers-logos/webkit.svg" width="90" height="90" />
+
+                            </div>
+
+                        </div>
+                        <!-- End: .row -->
+                    </div>
+                    <!-- End: .part-1 -->
+
+                </div>
+                <!-- End: .row -->
+            </div>
+            <!-- End: .container -->
+        </div>
+    </section>
+    <!-- End: Features Section 2
+        ================================== -->
+
+
+
+    <!-- Start: Features Section 3
+        ================================== -->
+    <section class="features-section-3 section" id="describe-2">
+        <div class="container">
+            <div class="row section-separator">
+
+                <div class="features-image col-md-6">
+
+                    <img src="images/jste-flavours.jpg" width="465" alt="App Image" class="img-responsive pull-left jste-flavours">
+
+                </div>
+                <div class="features-content m-t-50 col-md-6 ">
+
+                    <!-- Start: Section Heading -->
+                    <div class="section-header text-left m-b-30">
+                        <h2 class="section-heading gradient-text-full">Available In Four Flavours ;)</h2>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                    <div class="detail">
+                        <p>Till this moment, Jste has been ported officially to just 4 flavours which are mentioned below as
+                            the project is still in its Alpha stage, but we are looking forward to port it to every language
+                            exists in the world.....!</p>
+                    </div>
+                    <!-- End: .detail -->
+
+                    <div class="row features-list">
+
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="flag-icon flag-icon-gb"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="title">English</h5>
+                                    <p>Including English US & English UK with slightly differences between each of them.</p>
+                                </div>
+                            </div>
+                            <!-- End: .melia -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="flag-icon flag-icon-fr"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="title">French</h5>
+                                    <p>Needs more improvements as it has been translated depending on Google Translate :(</p>
+                                </div>
+                            </div>
+                            <!-- End: .melia -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="flag-icon flag-icon-ae"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="title">Arabic</h5>
+                                    <p>Pure Standard Arabian Language which the Arabian people has been used hundreds of years
+                                        ago !</p>
+                                </div>
+                            </div>
+                            <!-- End: .melia -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="flag-icon flag-icon-eg"></span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="title">Egyptian</h5>
+                                    <p>Arabic with the modern Egyptian flavour.</p>
+                                </div>
+                            </div>
+                            <!-- End: .melia -->
+                        </div>
 
                     </div>
-                    <div class="features-content m-t-50 col-md-6 col-md-pull-6">
-                            
-                        <!-- Start: Section Heading -->
-                        <div class="section-header text-left m-b-30">
-                            <h2 class="section-heading gradient-text-full">Fully Plain Text Syntax</h2>
+                    <!-- End: .row -->
+
+                </div>
+                <!-- End: .features-content -->
+
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 3
+        ================================== -->
+
+
+
+
+    <!-- Start: Features Section 4
+        ================================== -->
+    <section class="features-section-4" id="contribute">
+        <div class="overlay-color">
+            <div class="container">
+                <div class="row section-separator light-text">
+
+                    <!-- Start: Section Heading -->
+                    <div class="section-header col-md-10 col-md-offset-1">
+                        <h2 class="section-heading">Contribute To Project Jste Code On
+                            <a href="https://github.com/project-jste">
+                                <span class="fab fa-github"></span>
+                            </a> Directly Or Through Jste Command Studio To Upgrade It From The Alpha Stage To The Production
+                            Ready Level</h2>
+                        <a class="btn btn-fill" href="command-studio" target="_blank">GO TO JSTE COMMAND STUDIO</a>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                </div>
+                <!-- End: .row -->
+            </div>
+            <!-- End: .container -->
+        </div>
+        <!-- End: .overlay-color -->
+    </section>
+    <!-- End: Features Section 4
+        ================================== -->
+
+
+
+
+    <!-- Start: Features Section 3
+        ================================== -->
+    <section class="features-section-3 section app-swiper-slide" id="see-it-in-action">
+        <div class="container">
+            <div class="row section-separator">
+
+                <div class="section-header col-md-10 col-md-offset-1">
+                    <h2 class="section-heading gradient-text-full">See It In Action</h2>
+                    <p class="sub-title">or click
+                        <a href="jste://http://jste-demos.herokuapp.com/en-uk/calculator.html?page=calculator">here</a> to try the Jste-Powered calulator instant app on Android
+                        <b>*</b>
+                    </p>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="swiper-container screenshots-thumb">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p data-height="265" data-theme-id="0" data-slug-hash="yzOrJP" data-default-tab="html,result" data-user="jste" data-embed-version="2"
+                                        data-pen-title="English UK Demo" data-preview="true" class="codepen">See the Pen
+                                        <a href="https://codepen.io/jste/pen/yzOrJP/">English UK Demo</a> by Jste (
+                                        <a href="https://codepen.io/jste">@jste</a>) on
+                                        <a href="https://codepen.io">CodePen</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p data-height="265" data-theme-id="0" data-slug-hash="rGegLE" data-default-tab="html,result" data-user="jste" data-embed-version="2"
+                                        data-pen-title="English US Demo" data-preview="true" class="codepen">See the Pen
+                                        <a href="https://codepen.io/jste/pen/rGegLE/">English US Demo</a> by Jste (
+                                        <a href="https://codepen.io/jste">@jste</a>) on
+                                        <a href="https://codepen.io">CodePen</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p data-height="265" data-theme-id="0" data-slug-hash="zEqQYV" data-default-tab="html,result" data-user="jste" data-embed-version="2"
+                                        data-pen-title="French Demo" data-preview="true" class="codepen">See the Pen
+                                        <a href="https://codepen.io/jste/pen/zEqQYV/">French Demo</a> by Jste (
+                                        <a href="https://codepen.io/jste">@jste</a>) on
+                                        <a href="https://codepen.io">CodePen</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p data-height="265" data-theme-id="0" data-slug-hash="JrXqOK" data-default-tab="html,result" data-user="jste" data-embed-version="2"
+                                        data-pen-title="Arabic Demo" data-preview="true" class="codepen">See the Pen
+                                        <a href="https://codepen.io/jste/pen/JrXqOK/">Arabic Demo</a> by Jste (
+                                        <a href="https://codepen.io/jste">@jste</a>) on
+                                        <a href="https://codepen.io">CodePen</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <p data-height="265" data-theme-id="0" data-slug-hash="gGrJxo" data-default-tab="html,result" data-user="jste" data-embed-version="2"
+                                        data-pen-title="Egyptian Demo" data-preview="true" class="codepen">See the Pen
+                                        <a href="https://codepen.io/jste/pen/gGrJxo/">Egyptian Demo</a> by Jste (
+                                        <a href="https://codepen.io/jste">@jste</a>) on
+                                        <a href="https://codepen.io">CodePen</a>.</p>
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- End: Section Heading -->
 
-                        <div class="detail">
-                            <p>Jste syntax is fully plain, simplified and translated which means that if you want to develop anything using it, all what you have to do is opening a HTML file and writing plain text in your local language which everyone familiar with your langauage can understand it without even if he/she doesn't know <b>WHAT THE COMPUTER IS !</b></p>
-                            <p>This will help the noob people espicially in the poor countries to take part in the fastly growing technology world and the world wide web.....</p>
-                        </div> <!-- End: .detail -->
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination "></div>
 
+                    </div>
+                    <!-- End: .testimonials-thumb -->
+                    <p>* You have to install Jste Manager app on your Android device to be able to try the calcualtor instant
+                        app.
+                    </p>
+                </div>
+                <!-- End: .col-sm-6 -->
+
+            </div>
+            <!-- End: .row -->
+        </div>
+        <!-- End: .container -->
+    </section>
+    <!-- End: Features Section 3
+        ================================== -->
+
+
+
+
+    <!-- Start: Features Section 5
+        ================================== -->
+    <section class="features-section-5 testimonials-1" id="download">
+        <div class="overlay-color">
+            <div class="container">
+                <div class="row section-separator light-text">
+
+                    <!-- Start: Section Heading -->
+                    <div class="section-header col-md-10 col-md-offset-1">
+                        <h2 class="section-heading">Download Jste Manager Now</h2>
+                        <p class="sub-title">To Enjoy The Full Jste Experience</p>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                    <div class="clearfix"></div>
+
+                    <!-- Start: Download Button -->
+                    <div class="btn-form btn-scroll text-center">
                         <!-- Button Area -->
-                        <div class="m-t-50">  
-                            <a class="btn btn-fill" href="docs" target="_blank">DOCUMENTATION</a>
-                            <a href="https://www.youtube.com/watch?v=csq5LR-sYvI" class="btn btn-icon left-icon btn-border popup-video">
-                                <i class="icon icon-arrow-triangle-right-alt2"></i>
-                                <span class="btn-text">WATCH VIDEO</span>
-                            </a> <!-- End: .androad -->
-                        </div>
 
-                    </div> <!-- End: .features-content -->
-
-                </div> <!-- End: .row -->
-
-            </div> <!-- End: .container -->
-        </section>
-        <!-- End: Features Section 3
-        ================================== -->
-
-
-        <!-- Start: Features Section 2
-        ================================== -->
-        <section class="features-section-2" id="how-it-works">
-            <div class="overlay-color">
-                <div class="container">
-                    <div class="row section-separator light-text">
-                        
-                        <!-- Start: Section Heading -->
-                        <div class="section-header col-md-10 col-md-offset-1">
-                            <h2 class="section-heading">Compatible With Most Of Modern Browsers</h2>
-                            <p class="sub-title">And More Are On Their Way</p>
-                        </div>
-                        <!-- End: Section Heading -->
-
-                        <div class="part-1 col-xs-12">
-                            <div class="row">
-                                
-                                <div class=" text-center col-sm-2 col-xs-4">
-
-<img src="./images/browsers-logos/chrome.svg" width="90" height="90" />
-
-                                </div>
-                                <div class=" text-center col-sm-2 col-xs-4">
-
-                                    <img src="./images/browsers-logos/firefox.svg" width="90" height="90" />
-
-                                </div>
-                                <div class=" text-center col-sm-2 col-xs-4">
-
-                                    <img src="./images/browsers-logos/edge.svg" width="90" height="90" />
-
-                                </div>
-                                <div class=" text-center col-sm-2 col-xs-4">
-
-                                    <img src="./images/browsers-logos/safari.png" width="90" height="90" />
-
-                                </div>
-                                <div class=" text-center col-sm-2 col-xs-4">
-
-                                    <img src="./images/browsers-logos/opera.svg" width="90" height="90" />
-
-                                </div>
-                                <div class=" text-center col-sm-2 col-xs-4">
-
-                                    <img src="./images/browsers-logos/webkit.svg" width="90" height="90" />
-
-                                </div>
-
-                            </div> <!-- End: .row -->
-                        </div> <!-- End: .part-1 -->
-
-                    </div> <!-- End: .row -->
-                </div> <!-- End: .container -->
-            </div>
-        </section>
-        <!-- End: Features Section 2
-        ================================== -->
-
-
-
-        <!-- Start: Features Section 3
-        ================================== -->
-        <section class="features-section-3 section" id="describe-2">
-            <div class="container">
-                <div class="row section-separator">
-
-                    <div class="features-image col-md-6">
-
-                        <img src="images/jste-flavours.jpg" width="465" alt="App Image" class="img-responsive pull-left jste-flavours">
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-win-x86.exe" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-windows"></i>
+                            <span class="btn-text">Windows x86</span>
+                        </a>
+                        <!-- End: .windows -->
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-win-x64.exe" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-windows"></i>
+                            <span class="btn-text">Windows x64</span>
+                        </a>
+                        <!-- End: .windows -->
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-linux-x64" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-linux"></i>
+                            <span class="btn-text">Linux i386</span>
+                        </a>
+                        <!-- End: .linux -->
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-linux-x64" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-linux"></i>
+                            <span class="btn-text">Linux amd64</span>
+                        </a>
+                        <!-- End: .linux -->
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-alpine-x64" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-linux"></i>
+                            <span class="btn-text">Alpine x64</span>
+                        </a>
+                        <!-- End: .alpine -->
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-macos-x64" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-apple"></i>
+                            <span class="btn-text">Mac OS X x86</span>
+                        </a>
+                        <!-- End: .macos -->
+                        <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-macos-x86" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-apple"></i>
+                            <span class="btn-text">Mac OS X x64</span>
+                        </a>
+                        <!-- End: .macos -->
+                        <a href="https://github.com/project-jste/manager-phone/raw/master/build/android-debug.apk" class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-android"></i>
+                            <span class="btn-text">Android</span>
+                        </a>
+                        <!-- End: .android -->
+                        <a disabled class="btn btn-icon left-icon btn-fill">
+                            <i class="fab fa-apple"></i>
+                            <span class="btn-text">IOS ( Needs A Contributer With A Mac Device To be Built )</span>
+                        </a>
+                        <!-- End: .ios -->
 
                     </div>
-                    <div class="features-content m-t-50 col-md-6 ">
+                    <!-- End: Download Button -->
 
-                        <!-- Start: Section Heading -->
-                        <div class="section-header text-left m-b-30">
-                            <h2 class="section-heading gradient-text-full">Available In Four Flavours ;)</h2>
-                        </div>
-                        <!-- End: Section Heading -->
+                    <div class="clearfix"></div>
 
-                        <div class="detail">
-                            <p>Till this moment, Jste has been ported officially to just 4 flavours which are mentioned below as the project is still in its Alpha stage, but we are looking forward to port it to every language exists in the world.....!</p>
-                        </div> <!-- End: .detail -->
-
-                        <div class="row features-list">
-
-                            <div class="col-sm-6">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <span class="flag-icon flag-icon-gb"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="title">English</h5>
-                                        <p>Including English US & English UK with slightly differences between each of them.</p>
-                                    </div>
-                                </div> <!-- End: .melia -->
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <span class="flag-icon flag-icon-fr"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="title">French</h5>
-                                        <p>Needs more improvements as it has been translated depending on Google Translate :(</p>
-                                    </div>
-                                </div> <!-- End: .melia -->
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <span class="flag-icon flag-icon-ae"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="title">Arabic</h5>
-                                        <p>Pure Standard Arabian Language which the Arabian people has been used hundreds of years ago !</p>
-                                    </div>
-                                </div> <!-- End: .melia -->
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <span class="flag-icon flag-icon-eg"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="title">Egyptian</h5>
-                                        <p>Arabic with the modern Egyptian flavour.</p>
-                                    </div>
-                                </div> <!-- End: .melia -->
-                            </div>
-
-                        </div> <!-- End: .row -->
-
-                    </div> <!-- End: .features-content -->
-
-                </div> <!-- End: .row -->
-            </div> <!-- End: .container -->
-        </section>
-        <!-- End: Features Section 3
-        ================================== -->
-
-
-
-
-        <!-- Start: Features Section 4
-        ================================== -->
-        <section class="features-section-4" id="contribute">
-            <div class="overlay-color">
-                <div class="container">
-                    <div class="row section-separator light-text">
-                        
-                        <!-- Start: Section Heading -->
-                        <div class="section-header col-md-10 col-md-offset-1">
-                            <h2 class="section-heading">Contribute To Project Jste Code On <a href="https://github.com/project-jste"><span class="fab fa-github"></span></a> Directly Or Through Jste Command Studio To Upgrade It From The Alpha Stage To The Production Ready Level</h2>
-                            <a class="btn btn-fill" href="command-studio" target="_blank">GO TO JSTE COMMAND STUDIO</a>
-                        </div>
-                        <!-- End: Section Heading -->
-
-                    </div> <!-- End: .row -->
-                </div> <!-- End: .container -->
-            </div> <!-- End: .overlay-color -->
-        </section>
-        <!-- End: Features Section 4
-        ================================== -->
-
-
-
-
-        <!-- Start: Features Section 3
-        ================================== -->
-        <section class="features-section-3 section app-swiper-slide" id="see-it-in-action">
-            <div class="container">
-                <div class="row section-separator">
-
-                        <div class="section-header col-md-10 col-md-offset-1">
-                                <h2 class="section-heading gradient-text-full">See It In Action</h2>
-                                <p class="sub-title">or click <a href="jste://http://jste-demos.herokuapp.com/en-uk/calculator.html?page=calculator">here</a> to try the Jste-Powered calulator instant app on Android<b>*</b></p>
-                            </div>
-
-                    <div class="col-xs-12">
-                        <div class="swiper-container screenshots-thumb">
+                    <div class=" col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                        <div class="swiper-container">
                             <div class="swiper-wrapper">
 
+                                <!-- SLIDES -->
                                 <div class="swiper-slide">
-                                    <div class="item"><p data-height="265" data-theme-id="0" data-slug-hash="yzOrJP" data-default-tab="html,result" data-user="jste" data-embed-version="2"
-                                        data-pen-title="English UK Demo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jste/pen/yzOrJP/">English UK Demo</a> by Jste (<a href="https://codepen.io/jste">@jste</a>)
-                                        on <a href="https://codepen.io">CodePen</a>.</p>
-                                    </div>
+                                    <blockquote>Jste will be the future of programming as it gives every human the ability to take part
+                                        in the apps and sites developing process</blockquote>
+                                    <p class="client-profile">
+                                        <img src="images/clients-pic/client-1.jpg" alt="" class="client-img img-responsive">
+                                        <span class="detail-group text-left">
+                                            <span class="name">Ahmed Hassan</span>
+                                            <span class="position">Jste Founder</span>
+                                        </span>
+                                    </p>
                                 </div>
-
-                                <div class="swiper-slide">
-                                        <div class="item"><p data-height="265" data-theme-id="0" data-slug-hash="rGegLE" data-default-tab="html,result" data-user="jste" data-embed-version="2"
-                                            data-pen-title="English US Demo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jste/pen/rGegLE/">English US Demo</a> by Jste (<a href="https://codepen.io/jste">@jste</a>)
-                                            on <a href="https://codepen.io">CodePen</a>.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                            <div class="item"><p data-height="265" data-theme-id="0" data-slug-hash="zEqQYV" data-default-tab="html,result" data-user="jste" data-embed-version="2"
-                                                data-pen-title="French Demo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jste/pen/zEqQYV/">French Demo</a> by Jste (<a href="https://codepen.io/jste">@jste</a>)
-                                                on <a href="https://codepen.io">CodePen</a>.</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                                <div class="item"><p data-height="265" data-theme-id="0" data-slug-hash="JrXqOK" data-default-tab="html,result" data-user="jste" data-embed-version="2"
-                                                    data-pen-title="Arabic Demo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jste/pen/JrXqOK/">Arabic Demo</a> by Jste (<a href="https://codepen.io/jste">@jste</a>)
-                                                    on <a href="https://codepen.io">CodePen</a>.</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="swiper-slide">
-                                                    <div class="item"><p data-height="265" data-theme-id="0" data-slug-hash="gGrJxo" data-default-tab="html,result" data-user="jste" data-embed-version="2"
-                                                        data-pen-title="Egyptian Demo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jste/pen/gGrJxo/">Egyptian Demo</a> by Jste (<a href="https://codepen.io/jste">@jste</a>)
-                                                        on <a href="https://codepen.io">CodePen</a>.</p>
-                                                    </div>
-                                                </div>
+                                <!-- End: .swioer-slide -->
 
                             </div>
-
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination "></div>
-
-                        </div> <!-- End: .testimonials-thumb -->
-<p>* You have to install Jste Manager app on your Android device to be able to try the calcualtor instant app.</p>
-                    </div> <!-- End: .col-sm-6 -->
-
-                </div> <!-- End: .row -->
-            </div> <!-- End: .container -->
-        </section>
-        <!-- End: Features Section 3
-        ================================== -->
-
-
-
-
-        <!-- Start: Features Section 5
-        ================================== -->
-        <section class="features-section-5 testimonials-1" id="download">
-            <div class="overlay-color">
-                <div class="container">
-                    <div class="row section-separator light-text">
-                        
-                        <!-- Start: Section Heading -->
-                        <div class="section-header col-md-10 col-md-offset-1">
-                            <h2 class="section-heading">Download Jste Manager Now</h2>
-                            <p class="sub-title">To Enjoy The Full Jste Experience</p>
                         </div>
-                        <!-- End: Section Heading -->
-
-                        <div class="clearfix"></div>
-
-                         <!-- Start: Download Button -->
-                        <div class="btn-form btn-scroll text-center">  <!-- Button Area -->
-
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-win-x86.exe" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-windows"></i>
-                                <span class="btn-text">Windows x86</span>
-                            </a> <!-- End: .windows -->
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-win-x64.exe" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-windows"></i>
-                                <span class="btn-text">Windows x64</span>
-                            </a> <!-- End: .windows -->
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-linux-x64" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-linux"></i>
-                                <span class="btn-text">Linux i386</span>
-                            </a> <!-- End: .linux -->
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-linux-x64" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-linux"></i>
-                                <span class="btn-text">Linux amd64</span>
-                            </a> <!-- End: .linux -->
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-alpine-x64" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-linux"></i>
-                                <span class="btn-text">Alpine x64</span>
-                            </a> <!-- End: .alpine -->
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-macos-x64" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-apple"></i>
-                                <span class="btn-text">Mac OS X x86</span>
-                            </a> <!-- End: .macos -->
-                            <a href="https://github.com/project-jste/manager/raw/master/build/JsteManager-macos-x86" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-apple"></i>
-                                <span class="btn-text">Mac OS X x64</span>
-                            </a> <!-- End: .macos -->
-                            <a href="https://github.com/project-jste/manager-phone/raw/master/build/android-debug.apk" class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-android"></i>
-                                <span class="btn-text">Android</span>
-                            </a> <!-- End: .android --> 
-<a disabled class="btn btn-icon left-icon btn-fill">
-                                <i class="fab fa-apple"></i>
-                                <span class="btn-text">IOS ( Needs A Contributer With A Mac Device To be Built )</span>
-                            </a> <!-- End: .ios -->
-
-                        </div>
-                        <!-- End: Download Button -->
-
-                        <div class="clearfix"></div>
-                        
-                        <div class=" col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-
-                                    <!-- SLIDES -->
-                                    <div class="swiper-slide">
-                                        <blockquote>Jste will be the future of programming as it gives every human the ability to take part in the apps and sites developing process</blockquote>
-                                        <p class="client-profile">
-                                            <img src="images/clients-pic/client-1.jpg" alt="" class="client-img img-responsive">
-                                            <span class="detail-group text-left">
-                                                <span class="name">Ahmed Hassan</span>
-                                                <span class="position">Jste Founder</span>
-                                            </span>
-                                        </p>
-                                    </div> <!-- End: .swioer-slide -->
-
-                                </div>
-                            </div> <!-- /#testimonials-1 -->
-                        </div> <!-- End: .col-xs-12 -->
-
-                    </div> <!-- End: .row -->
-                </div> <!-- End: .container -->
-            </div> <!-- End: .overlay-color-full -->
-        </section>
-        <!-- End: Features Section 5
-        ================================== -->
-
-
-
-
-        <!-- Start: Footer Section 1
-        ================================== -->
-        <footer class="footer-section-1" id="footer">
-            <div class="container">
-                <div class="row section-separator">
-
-                    <div class="each-item col-sm-5">
-                        <div class="inner text-right">
-                            
-                            <p class="sub-title">Any question?</p>
-                            <a href="mailto:project-jste@outlook.com">
-                                <h5 class="title">Contact us now!</h5>
-                            </a>
-
-                        </div>
+                        <!-- /#testimonials-1 -->
                     </div>
-                    <div class="each-item col-sm-2">
-                        <div class="inner text-center">
-                            
-                            <a href="index.html" class="logo-link">
-                                <img src="images/logo-color.png" alt="" class="img-responsive logo">
-                            </a>
+                    <!-- End: .col-xs-12 -->
 
-                        </div>
-                    </div>
-                    <div class="each-item col-sm-5">
-                        <div class="inner text-left">
-                            
-                            <p class="sub-title">Follow us on</p>
-                            <ul class="nav social-icon">
-                                <li><a href="https://www.facebook.com/ProjectJste"><i class="icon icon-social-facebook"></i></a></li>
-                                <li><a href="https://github.com/project-jste"><i class="fab fa-github"></i></a></li>
-                                <li><a href="https://gitlab.com/project-jste"><i class="fab fa-gitlab"></i></a></li>
-                                <li><a href="https://gitter.im/Project-Jste"><i class="fab fa-gitter"></i></a></li>
-                                <li><a href="https://medium.com/project-jste"><i class="fab fa-medium"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCtbujMS1_cUalAebhk7xuoQ"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                </div><!-- End: .section-separator  -->
-            </div> <!-- End: .container  -->
-        </footer>
-        <!-- End: Footer Section 1
+                </div>
+                <!-- End: .row -->
+            </div>
+            <!-- End: .container -->
+        </div>
+        <!-- End: .overlay-color-full -->
+    </section>
+    <!-- End: Features Section 5
         ================================== -->
 
-        
-        <!-- SCRIPTS 
+
+
+
+    <!-- Start: Footer Section 1
+        ================================== -->
+    <footer class="footer-section-1" id="footer">
+        <div class="container">
+            <div class="row section-separator">
+
+                <div class="each-item col-sm-5">
+                    <div class="inner text-right">
+
+                        <p class="sub-title">Any question?</p>
+                        <a href="mailto:project-jste@outlook.com">
+                            <h5 class="title">Contact us now!</h5>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="each-item col-sm-2">
+                    <div class="inner text-center">
+
+                        <a href="index.html" class="logo-link">
+                            <img src="images/logo-color.png" alt="" class="img-responsive logo">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="each-item col-sm-5">
+                    <div class="inner text-left">
+
+                        <p class="sub-title">Follow us on</p>
+                        <ul class="nav social-icon">
+                            <li>
+                                <a href="https://www.facebook.com/ProjectJste">
+                                    <i class="icon icon-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/project-jste">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://gitlab.com/project-jste">
+                                    <i class="fab fa-gitlab"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://gitter.im/Project-Jste">
+                                    <i class="fab fa-gitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/project-jste">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCtbujMS1_cUalAebhk7xuoQ">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- End: .section-separator  -->
+        </div>
+        <!-- End: .container  -->
+    </footer>
+    <!-- End: Footer Section 1
+        ================================== -->
+
+
+    <!-- SCRIPTS 
         ========================================-->
-        <script src="js/plagin-js/jquery-1.11.3.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/plagin-js/plagin.js"></script>
-        <script src="js/typed.js"></script>
-        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    <script src="js/plagin-js/jquery-1.11.3.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/plagin-js/plagin.js"></script>
+    <script src="js/typed.js"></script>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src =
+                'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=272767596556886&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
 
-        <!-- Custom Script 
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+    <!-- Custom Script 
         ==========================================-->
-        <script src="js/custom-scripts.js"></script>
+    <script src="js/custom-scripts.js"></script>
 
 
-        <script>
-function goTo (target) {
-	location.href = target;
-}
-                var typed = new Typed('.showcaseText', {
-                    strings: ['add a text with the following properties:<br>its name is welcome_message,<br>its text is Hello World,<br>its font colour is blue,<br>its font size is 20 pixels,<br>its font thickness is thick.<br><br>add a raised button with the following properties:<br>its name is font_colour_changer,<br>its text is Change the welcome_text font colour,<br>its commands are When it has been clicked, set the font colour of welcome_message to yellow.', 
-                    'add a text with the following properties:<br>its name is welcome_message,<br>its text is Hello World,<br>its font color is blue,<br>its font size is 20 pixels,<br>its font thickness is thick.<br><br>add a raised button with the following properties:<br>its name is font_colour_changer,<br>its text is Change the welcome_text font color,<br>its commands are When it has been clicked, set the font color of welcome_message to yellow.', 
-                    'ajouter le texte avec les propriétés suivantes:<br>son nom est message_de_bienvenue,<br>son texte est Bonjour Le Mond,<br>sa couleur de police est bleu,<br>sa taille de police est 20 pixels,<br>son épaisseur de police est épais.<br><br>ajouter le bouton élevé avec les propriétés suivantes:<br>son nom est font_colour_changer,<br>sa texte est Changer la couleur de police de message_de_bienvenue,<br>ses commandes sont Quand il a été cliqué, définir la couleur de police de message_de_bienvenue à jaun.',
-                    'اضف نص بالخواص التالية:<br>الاسم الخاص به رسالة_الترحيب,<br>النص الخاص به مرحبا,<br>لون الخط الخاص به ازرق,<br>حجم الخط الخاص به 20 بكسل,<br>سمك الخط الخاص به سميك.<br><br>اضف زر مرفوع بالخواص التالية:<br>الاسم الخاص به مغير_لون_الخط,<br>النص الخاص به غير لون خط رسالة_الترحيب,<br>الأوامر الخاصة به إذا نقر عليه, اجعل لون خط نص رسالة_الترحيب اصفر.',
-                    'ضيف كلام بالخواص دى:<br>الاسم بتاعه رسالة_الترحيب,<br>الكلام بتاعه مرحبا,<br>لون الخط بتاعه ازرق,<br>حجم الخط بتاعه 20 بكسل,<br>طخن الخط بتاعه طخين.<br><br>ضيف زرار مرفوع بالخواص دى:<br>الاسم بتاعه مغير_لون_الخط,<br>الكلام بتاعه غير لون خط رسالة_الترحيب,<br>الأوامر بتاعته لما يضغط عليه, خلى لون خط كلام رسالة_الترحيب اصفر.'],
-                    typeSpeed: 50,
-                    backSpeed: 20,
-                    shuffle: true,
-                    smartBackspace: true,
-                    loop: true
-                  });
-              </script>
-<a href="https://github.com/project-jste" class="github-corner" aria-label="View source on Github">
-    <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-            fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-            fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
-    </body>
+    <script>
+        function goTo(target) {
+            location.href = target;
+        }
+        var typed = new Typed('.showcaseText', {
+            strings: [
+                'add a text with the following properties:<br>its name is welcome_message,<br>its text is Hello World,<br>its font colour is blue,<br>its font size is 20 pixels,<br>its font thickness is thick.<br><br>add a raised button with the following properties:<br>its name is font_colour_changer,<br>its text is Change the welcome_text font colour,<br>its commands are When it has been clicked, set the font colour of welcome_message to yellow.',
+                'add a text with the following properties:<br>its name is welcome_message,<br>its text is Hello World,<br>its font color is blue,<br>its font size is 20 pixels,<br>its font thickness is thick.<br><br>add a raised button with the following properties:<br>its name is font_colour_changer,<br>its text is Change the welcome_text font color,<br>its commands are When it has been clicked, set the font color of welcome_message to yellow.',
+                'ajouter le texte avec les propriétés suivantes:<br>son nom est message_de_bienvenue,<br>son texte est Bonjour Le Mond,<br>sa couleur de police est bleu,<br>sa taille de police est 20 pixels,<br>son épaisseur de police est épais.<br><br>ajouter le bouton élevé avec les propriétés suivantes:<br>son nom est font_colour_changer,<br>sa texte est Changer la couleur de police de message_de_bienvenue,<br>ses commandes sont Quand il a été cliqué, définir la couleur de police de message_de_bienvenue à jaun.',
+                'اضف نص بالخواص التالية:<br>الاسم الخاص به رسالة_الترحيب,<br>النص الخاص به مرحبا,<br>لون الخط الخاص به ازرق,<br>حجم الخط الخاص به 20 بكسل,<br>سمك الخط الخاص به سميك.<br><br>اضف زر مرفوع بالخواص التالية:<br>الاسم الخاص به مغير_لون_الخط,<br>النص الخاص به غير لون خط رسالة_الترحيب,<br>الأوامر الخاصة به إذا نقر عليه, اجعل لون خط نص رسالة_الترحيب اصفر.',
+                'ضيف كلام بالخواص دى:<br>الاسم بتاعه رسالة_الترحيب,<br>الكلام بتاعه مرحبا,<br>لون الخط بتاعه ازرق,<br>حجم الخط بتاعه 20 بكسل,<br>طخن الخط بتاعه طخين.<br><br>ضيف زرار مرفوع بالخواص دى:<br>الاسم بتاعه مغير_لون_الخط,<br>الكلام بتاعه غير لون خط رسالة_الترحيب,<br>الأوامر بتاعته لما يضغط عليه, خلى لون خط كلام رسالة_الترحيب اصفر.'
+            ],
+            typeSpeed: 50,
+            backSpeed: 20,
+            shuffle: true,
+            smartBackspace: true,
+            loop: true
+        });
+    </script>
+    <a href="https://github.com/project-jste" class="github-corner" aria-label="View source on Github">
+        <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+</body>
 
 </html>
