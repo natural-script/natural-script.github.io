@@ -486,6 +486,10 @@ section.section {
 .social-icon li:last-child a {
   margin-right: 0px;
 }
+.twitter-share-button {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.75); 
+}
 /**
  * ===================================
  * Subscription and contact  "MESSAGE"
