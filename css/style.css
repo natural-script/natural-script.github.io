@@ -1191,6 +1191,7 @@ section.section {
 }
 
 .showcaseContent {
+  text-align: left !important;
   padding: 10px;
 }
 
